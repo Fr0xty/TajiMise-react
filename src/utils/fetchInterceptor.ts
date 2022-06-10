@@ -27,8 +27,8 @@ export const registerFetchInterceptor = () => {
                     /**
                      * invalid access token: refresh for client
                      */
-                    const refreshReq = await fetch('/api/auth/refresh-token');
-                    if (refreshReq.status !== 200) return; // TODO: reset session and display invalid session
+                    const refreshReq = await fetch('/api/auth/refresh-token', { method: 'post' });
+                    if (refreshReq.status !== 200) return (window.location.href = '/api/auth/reset-session');
                     window.location.reload();
                 }
             })();
