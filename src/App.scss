@@ -1,0 +1,31 @@
+:root {
+    --jet: #353535;
+    --light-gray: #d2d7df;
+    --copper-rose: #bdbbb0;
+
+    --cadet: #5d737e;
+    --green-sheen: #64b6ac;
+    --celeste: #c0fdfb;
+    --aero-blue: #daffef;
+    --baby-powder: #fcfffd;
+
+    --nyanza: #d6f6dd;
+    --lavender-blue: #dac4f7;
+    --salmon-pink: #f4989c;
+    --bisque: #ebd2b4;
+    --blizzard-blue: #acecf7;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

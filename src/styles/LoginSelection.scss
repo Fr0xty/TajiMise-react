@@ -1,0 +1,39 @@
+.login-selection {
+    width: 12em;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+        margin-top: 1em;
+        width: 6em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0.2em 0;
+    }
+
+    footer {
+        color: var(--blizzard-blue);
+        font-size: 0.8em;
+    }
+
+    &.discord {
+        background: #23272a;
+        color: #ffffff;
+        border: 3px double var(--light-gray);
+
+        img {
+            width: 5em;
+            margin: 1.8em 0 0.5em;
+        }
+    }
+
+    &.google {
+        background-color: white;
+        color: var(--jet);
+        border: 3px double var(--jet);
+    }
+}

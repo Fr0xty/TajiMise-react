@@ -1,0 +1,14 @@
+.in-progress {
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.1)), var(--cadet);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+
+    h1 {
+        display: block;
+        text-align: center;
+        margin-top: 10em;
+        color: aliceblue;
+    }
+}

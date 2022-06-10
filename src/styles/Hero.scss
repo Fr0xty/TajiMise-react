@@ -1,0 +1,158 @@
+.hero {
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.1)), var(--cadet);
+    min-height: 100vh;
+    position: relative;
+
+    .content {
+        padding: 2em 4em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 18%;
+        bottom: 0;
+
+        .texts {
+            padding: 4em 0;
+            margin-left: 5em;
+            z-index: 100;
+            position: relative;
+
+            h1 {
+                font-size: 5em;
+                color: var(--baby-powder);
+                margin-bottom: 0.5em;
+                margin-top: 0.2em;
+                line-height: 1.15em;
+
+                span {
+                    color: transparent;
+                    background: linear-gradient(to left, var(--salmon-pink) 50%, var(--nyanza) 50%) right;
+                    background-size: 200%;
+                    transition: 0.4s;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+
+                    &:hover {
+                        background-position: left;
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.4em;
+                color: var(--light-gray);
+                width: 30em;
+                text-shadow: -1px -1px 0 var(--cadet), -1px 0px 0 var(--cadet), -1px 1px 0 var(--cadet),
+                    0px -1px 0 var(--cadet), 0px 0px 0 var(--cadet), 0px 1px 0 var(--cadet), 1px -1px 0 var(--cadet),
+                    1px 0px 0 var(--cadet), 1px 1px 0 var(--cadet);
+            }
+
+            .action-row {
+                display: flex;
+                justify-content: left;
+
+                button {
+                    margin: 2em 0.5em;
+                    padding: 0.5em 1em;
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    background: none;
+                    color: var(--lavender-blue);
+                    border: 2px solid var(--lavender-blue);
+                    cursor: pointer;
+                    transition: background 0.4s, color 0.4s;
+
+                    &:hover {
+                        color: rgb(50, 50, 50);
+                        background: var(--lavender-blue);
+                    }
+                }
+
+                pre {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    color: white;
+                    height: 1.2em;
+                    margin: auto 0;
+                    margin-left: 2em;
+                }
+            }
+        }
+
+        img.hero-visual {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 120%;
+            z-index: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .hero .content {
+        img.hero-visual {
+            height: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero .content {
+        .texts {
+            display: block;
+            text-align: center;
+            margin: 0;
+
+            h1 {
+                font-size: 3.5em;
+                display: block;
+            }
+
+            p {
+                font-size: 1.3em;
+                width: 100%;
+            }
+
+            .action-row {
+                justify-content: center;
+            }
+        }
+
+        img.hero-visual {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .hero {
+        .content {
+            .texts {
+                padding: 1em 0;
+
+                h1 {
+                    font-size: 3em;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    margin-bottom: 0;
+                }
+                .action-row {
+                    display: block;
+                    button {
+                        font-size: 1.1em;
+                        margin-bottom: 1.5em;
+                    }
+
+                    pre {
+                        font-size: 1.2em;
+                        margin: 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
