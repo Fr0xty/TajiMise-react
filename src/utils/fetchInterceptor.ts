@@ -17,8 +17,8 @@ export const registerFetchInterceptor = () => {
              * refresh access token when our server starts sending 401 response
              */
             (async () => {
-                const currentDomain = /(https?:\/\/).+\//.exec(window.location.href)?.shift();
-                const responseDomain = /(https?:\/\/).+\//.exec(response.url)?.shift();
+                const currentDomain = /(https?:\/\/).+?\//.exec(window.location.href)?.shift();
+                const responseDomain = /(https?:\/\/).+?\//.exec(response.url)?.shift();
 
                 /**
                  * if 401 was sent by our own server
