@@ -30,7 +30,7 @@ const Navbar = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }
                     <a href="/about" className="about-nav">
                         About
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://discord.gg/dKNrYTeFcv">
+                    <a target="_blank" rel="noreferrer" href="/api/redirect/discord-server">
                         Discord Server
                     </a>
                 </nav>
