@@ -3,8 +3,15 @@ import '../styles/Hero.scss';
 import heroVisual from '../assets/images/hero_visual.png';
 
 import Navbar from './Navbar';
+import { useEffect, useState } from 'react';
 
 const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) => {
+    const [loggedIn, setLoggedIn] = useState(false);
+
+    useEffect(() => {
+        if (document.cookie.includes('logged_in=')) setLoggedIn(true);
+    }, []);
+
     return (
         <div className="hero no-select">
             <Navbar currentPage={currentPage} />
@@ -20,10 +27,10 @@ const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) 
                         characters you ruminate, why not bring them to reality?
                     </p>
                     <div className="action-row">
-                        <a href="/login">
-                            <button>Sign Up</button>
+                        <a href={loggedIn ? '/products' : '/login'}>
+                            <button>{loggedIn ? 'See Products' : 'Sign Up'}</button>
                         </a>
-                        <pre>START YOUR JOURNEY!</pre>
+                        <pre>{loggedIn ? 'BROWSE OUR WIDE SELECTION!' : 'START YOUR JOURNEY!'}</pre>
                     </div>
                 </div>
                 <img className="hero-visual" src={heroVisual} alt="visual" />
