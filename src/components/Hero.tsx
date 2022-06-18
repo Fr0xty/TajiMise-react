@@ -12,7 +12,7 @@ const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) 
 
     return (
         <div className="hero no-select">
-            <Navbar currentPage={currentPage} />
+            <Navbar currentPage={currentPage} noBackground={true} />
 
             <div className="content">
                 <div className="texts">

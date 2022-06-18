@@ -35,72 +35,75 @@
         }
     }
 
+    .background {
+        position: absolute;
+        background-image: url(../assets/images/navbar_background.png);
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
-        padding: 2em 10em 0;
+        padding: 2em 3em 0;
         height: 5em;
         position: relative;
 
-        a img {
-            height: 5em;
-            animation: TajiMiseLogoAnimation 0.8s cubic-bezier(0.83, 0.62, 0.8, 1.35);
-            position: relative;
-            z-index: 999;
-        }
-
-        nav {
+        .left-group {
             display: flex;
             justify-content: space-between;
-            width: 50%;
+            width: 45%;
 
-            a {
-                font-size: 1.4em;
-                padding: auto 1em auto 0;
-                color: var(--copper-rose);
-                height: auto;
-                margin: auto 0;
-                transition: transform 0.3s;
+            a img {
+                height: 5em;
+                animation: TajiMiseLogoAnimation 0.8s cubic-bezier(0.83, 0.62, 0.8, 1.35);
+                position: relative;
+                z-index: 999;
+            }
 
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background: var(--copper-rose);
-                    transform: scaleX(0);
-                    transition: transform 0.4s ease;
-                }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
 
-                &:hover::after,
-                &.current-page::after {
-                    transform: scaleX(1);
-                }
-                &:hover {
-                    transform: translateY(-0.2em);
-                }
+                a {
+                    font-size: 1.1em;
+                    padding: auto 0;
+                    color: var(--jet);
+                    height: auto;
+                    margin: auto 0;
+                    transition: transform 0.3s;
 
-                &.current-page {
-                    font-weight: bold;
-
-                    &.home-nav {
-                        color: var(--blizzard-blue);
-                        &::after {
-                            background: var(--blizzard-blue);
-                        }
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        bottom: 0;
+                        left: 0;
+                        background: var(--jet);
+                        transform: scaleX(0);
+                        transition: transform 0.4s ease;
                     }
-                    &.products-nav {
-                        color: var(--lavender-blue);
-                        &::after {
-                            background: var(--lavender-blue);
-                        }
+
+                    &:hover::after,
+                    &.current-page::after {
+                        transform: scaleX(1);
                     }
-                    &.about-nav {
-                        color: var(--bisque);
+                    &:hover {
+                        transform: translateY(-0.2em);
+                    }
+
+                    &.current-page {
+                        font-weight: bold;
+
                         &::after {
-                            background: var(--bisque);
+                            height: 2px;
                         }
                     }
                 }
@@ -128,10 +131,12 @@
     }
 }
 
-@media screen and (max-width: 1435px) {
-    .navbar-wrapper .navbar {
-        nav a {
-            font-size: 1.2em;
+@media screen and (max-width: 1380px) {
+    .navbar-wrapper .navbar .left-group {
+        width: 50%;
+
+        nav {
+            width: 73%;
         }
     }
 }
