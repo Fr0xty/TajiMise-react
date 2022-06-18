@@ -1,6 +1,10 @@
 .hero {
-    background-image: url(../assets/images/network_background.png);
-    min-height: 100vh;
+    background-image: url(../assets/images/hero_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: auto;
     position: relative;
 
     .content {
@@ -42,9 +46,6 @@
                 font-size: 1.4em;
                 color: var(--light-gray);
                 width: 30em;
-                text-shadow: -1px -1px 0 var(--cadet), -1px 0px 0 var(--cadet), -1px 1px 0 var(--cadet),
-                    0px -1px 0 var(--cadet), 0px 0px 0 var(--cadet), 0px 1px 0 var(--cadet), 1px -1px 0 var(--cadet),
-                    1px 0px 0 var(--cadet), 1px 1px 0 var(--cadet);
             }
 
             .action-row {
