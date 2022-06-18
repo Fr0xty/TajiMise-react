@@ -1,7 +1,5 @@
 import '../styles/Hero.scss';
 
-import heroVisual from '../assets/images/hero_visual.png';
-
 import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
 
@@ -33,7 +31,6 @@ const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) 
                         <pre>{loggedIn ? 'BROWSE OUR WIDE SELECTION!' : 'START YOUR JOURNEY!'}</pre>
                     </div>
                 </div>
-                <img className="hero-visual" src={heroVisual} alt="visual" />
             </div>
         </div>
     );
