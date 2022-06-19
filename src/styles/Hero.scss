@@ -40,6 +40,12 @@
             width: 60%;
             margin: 0 auto;
         }
+
+        img {
+            height: 16em;
+            border: 2px var(--jet) dotted;
+            border-radius: 1em;
+        }
     }
 }
 
