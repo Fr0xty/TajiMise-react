@@ -197,28 +197,30 @@
     .navbar-wrapper .navbar {
         padding: 2em 5em;
 
-        nav {
-            position: absolute;
-            height: auto;
-            width: calc(100% - 10em);
-            display: block;
-            margin: 0;
-            top: 10em;
-            padding: 0 1em;
-            z-index: -999;
-
-            a {
+        .left-group {
+            nav {
+                position: absolute;
+                height: auto;
+                width: calc(100% - 10em);
                 display: block;
-                width: 10em;
-                margin: 0 auto;
-                padding: 1em 0;
-                font-size: 1.7em;
-                opacity: 0;
-                transition: opacity 0.4s;
-                color: white;
+                margin: 0;
+                top: 10em;
+                padding: 0 1em;
+                z-index: -999;
 
-                &::after {
-                    background: white;
+                a {
+                    display: block;
+                    width: 10em;
+                    margin: 0 auto;
+                    padding: 1em 0;
+                    font-size: 1.7em;
+                    opacity: 0;
+                    transition: opacity 0.4s;
+                    color: white;
+
+                    &::after {
+                        background: white;
+                    }
                 }
             }
         }
