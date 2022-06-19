@@ -45,6 +45,11 @@ const Navbar = ({
                     </nav>
                 </div>
 
+                <div className="right-group">
+                    <a href="/login">
+                        <button>Login</button>
+                    </a>
+                </div>
                 <div
                     className="burger-menu"
                     onClick={() => document.querySelector('.navbar-wrapper')?.classList.toggle('open-nav')}

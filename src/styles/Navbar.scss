@@ -110,6 +110,35 @@
             }
         }
 
+        .right-group {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                margin: auto 0;
+
+                button {
+                    display: block;
+                    height: min-content;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    background: white;
+                    color: var(--dark-blizzard-blue);
+                    border-radius: 0.2em;
+                    border: none;
+                    padding: 0.4em 1em;
+
+                    box-shadow: 4px 4px 16px rgba($color: #8fbae3, $alpha: 0.7);
+                    transition: box-shadow 0.3s, transform 0.3s;
+
+                    &:hover {
+                        box-shadow: none;
+                        transform: rotate(4deg) translateY(-0.1em);
+                    }
+                }
+            }
+        }
+
         .burger-menu {
             display: none;
             width: 2.5em;
