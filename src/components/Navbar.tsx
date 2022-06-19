@@ -1,6 +1,7 @@
 import '../styles/Navbar.scss';
 import transparent_tajimise_navbar from '../assets/images/transparent_tajimise_navbar.png';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import AccountBar from './AccountBar';
 
 const Navbar = ({
     currentPage,
@@ -9,7 +10,11 @@ const Navbar = ({
     currentPage?: 'home' | 'about' | 'products';
     noBackground?: boolean;
 }) => {
+    const [loggedIn, setLoggedIn] = useState(false);
+
     useEffect(() => {
+        if (document.cookie.includes('logged_in=')) setLoggedIn(true);
+
         if (!currentPage) return;
         document.querySelector(`.navbar a.${currentPage}-nav`)?.classList.add('current-page');
     }, []);
@@ -46,9 +51,12 @@ const Navbar = ({
                 </div>
 
                 <div className="right-group">
-                    <a href="/login">
-                        <button>Login</button>
-                    </a>
+                    {!loggedIn && (
+                        <a href="/login">
+                            <button>Login</button>
+                        </a>
+                    )}
+                    {loggedIn && <AccountBar />}
                 </div>
                 <div
                     className="burger-menu"

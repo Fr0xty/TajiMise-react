@@ -137,6 +137,20 @@
                     }
                 }
             }
+
+            .account-bar {
+                margin: auto 0;
+                padding: 0;
+
+                img {
+                    height: 2.5em;
+                    margin: auto 0;
+
+                    &.cart-icon {
+                        margin-right: 3em;
+                    }
+                }
+            }
         }
 
         .burger-menu {
@@ -161,11 +175,13 @@
 }
 
 @media screen and (max-width: 1380px) {
-    .navbar-wrapper .navbar .left-group {
-        width: 50%;
+    .navbar-wrapper .navbar {
+        .left-group {
+            width: 50%;
 
-        nav {
-            width: 73%;
+            nav {
+                width: 73%;
+            }
         }
     }
 }
@@ -205,6 +221,10 @@
                     background: white;
                 }
             }
+        }
+
+        .right-group {
+            display: none;
         }
 
         .burger-menu {
