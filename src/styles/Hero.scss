@@ -8,120 +8,67 @@
     position: relative;
 
     .content {
-        padding: 2em 4em;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 18%;
-        bottom: 0;
+        margin-top: 4em;
+        text-align: center;
 
-        .texts {
-            padding: 4em 0;
-            margin-left: 5em;
-            z-index: 100;
-            position: relative;
+        h1 {
+            font-size: 4em;
+            color: var(--baby-powder);
+            margin-bottom: 0.5em;
+            margin-top: 0.2em;
+            line-height: 1.15em;
+            text-shadow: -1px 0px 0px var(--jet), -1px 1px 0px var(--jet), 0px -1px 0px var(--jet),
+                0px 1px 0px var(--jet), 1px -1px 0px var(--jet), 1px 0px 0px var(--jet);
 
-            h1 {
-                font-size: 5em;
-                color: var(--baby-powder);
-                margin-bottom: 0.5em;
-                margin-top: 0.2em;
-                line-height: 1.15em;
+            span {
+                color: transparent;
+                background: linear-gradient(to left, var(--jet) 50%, var(--salmon-pink) 50%) right;
+                background-size: 200%;
+                transition: 0.4s;
+                -webkit-background-clip: text;
+                background-clip: text;
+                text-shadow: none;
 
-                span {
-                    color: transparent;
-                    background: linear-gradient(to left, var(--salmon-pink) 50%, var(--nyanza) 50%) right;
-                    background-size: 200%;
-                    transition: 0.4s;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-
-                    &:hover {
-                        background-position: left;
-                    }
-                }
-            }
-
-            p {
-                font-size: 1.4em;
-                color: var(--light-gray);
-                width: 30em;
-            }
-
-            .action-row {
-                display: flex;
-                justify-content: left;
-
-                button {
-                    margin: 2em 0.5em;
-                    padding: 0.5em 1em;
-                    font-size: 1.3em;
-                    font-weight: bold;
-                    background: none;
-                    color: var(--lavender-blue);
-                    border: 2px solid var(--lavender-blue);
-                    cursor: pointer;
-                    transition: background 0.4s, color 0.4s;
-
-                    &:hover {
-                        color: rgb(50, 50, 50);
-                        background: var(--lavender-blue);
-                    }
-                }
-
-                pre {
-                    font-size: 1.3em;
-                    font-weight: bold;
-                    color: white;
-                    height: 1.2em;
-                    margin: auto 0;
-                    margin-left: 2em;
+                &:hover {
+                    background-position: left;
                 }
             }
         }
 
-        img.hero-visual {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            height: 120%;
-            z-index: 0;
+        p {
+            font-size: 1.4em;
+            width: 60%;
+            margin: 0 auto;
         }
     }
 }
 
-@media screen and (max-width: 1120px) {
-    .hero .content {
-        img.hero-visual {
-            height: 90%;
+@media screen and (max-width: 1188px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+
+        .content {
+            margin-top: 0;
+
+            h1 {
+                margin-top: 0;
+            }
+            p {
+                font-size: 1.2em;
+            }
         }
     }
 }
 
 @media screen and (max-width: 800px) {
     .hero .content {
-        .texts {
-            display: block;
-            text-align: center;
-            margin: 0;
-
-            h1 {
-                font-size: 3.5em;
-                display: block;
-            }
-
-            p {
-                font-size: 1.3em;
-                width: 100%;
-            }
-
-            .action-row {
-                justify-content: center;
-            }
+        h1 {
+            font-size: 3.5em;
         }
 
-        img.hero-visual {
-            display: none;
+        p {
+            font-size: 1.1em;
         }
     }
 }
@@ -129,30 +76,12 @@
 @media screen and (max-width: 530px) {
     .hero {
         .content {
-            .texts {
-                padding: 1em 0;
+            h1 {
+                font-size: 3em;
+            }
 
-                h1 {
-                    font-size: 3em;
-                    margin: 0;
-                }
-
-                p {
-                    font-size: 1.2em;
-                    margin-bottom: 0;
-                }
-                .action-row {
-                    display: block;
-                    button {
-                        font-size: 1.1em;
-                        margin-bottom: 1.5em;
-                    }
-
-                    pre {
-                        font-size: 1.2em;
-                        margin: 0 0;
-                    }
-                }
+            p {
+                font-size: 1em;
             }
         }
     }
