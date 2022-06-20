@@ -6,9 +6,11 @@ import AccountBar from './AccountBar';
 const Navbar = ({
     currentPage,
     noBackground,
+    noAccountNavs,
 }: {
     currentPage?: 'home' | 'about' | 'products';
     noBackground?: boolean;
+    noAccountNavs?: boolean;
 }) => {
     const [loggedIn, setLoggedIn] = useState(false);
 
@@ -56,7 +58,7 @@ const Navbar = ({
                             <button>Login</button>
                         </a>
                     )}
-                    {loggedIn && <AccountBar />}
+                    {loggedIn && !noAccountNavs && <AccountBar />}
                 </div>
                 <div
                     className="burger-menu"
