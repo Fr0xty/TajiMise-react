@@ -5,6 +5,10 @@ import GoogleLogo from '../assets/images/google_logo.svg';
 
 const LoginSelection = ({ method }: { method: 'discord' | 'google' }) => {
     const redirect = () => {
+        // TODO: implement google login and remove this
+        if (method === 'google')
+            return alert('Sorry, Google login is not yet implemented. We apologies for the inconvenience.');
+
         document.location.href = `/api/redirect/oauth/${method}`;
     };
 
