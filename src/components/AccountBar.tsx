@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const AccountBar = () => {
     const [loggedIn, setLoggedIn] = useState(false);
     const [username, setUsername] = useState('loading...');
-    const [userPfp, setUserPfp] = useState(userIcon);
+    const [userAvatar, setUserAvatar] = useState(userIcon);
 
     useEffect(() => {
         (async () => {
@@ -18,7 +18,7 @@ const AccountBar = () => {
                 const { name, avatarURL } = await fetchProfileReq.json();
                 setUsername(name);
                 if (avatarURL === null) return;
-                setUserPfp(avatarURL);
+                setUserAvatar(avatarURL);
             }
         })();
     }, []);
@@ -31,7 +31,7 @@ const AccountBar = () => {
             <a href={loggedIn ? '/account' : '/login'}>
                 <div className="account-navigation selection">
                     <p className="account-name">{loggedIn ? username : 'Log In'}</p>
-                    <img className="avatar-icon" src={userPfp} alt="avatar icon" />
+                    <img className="avatar-icon" src={userAvatar} alt="avatar icon" />
                 </div>
             </a>
         </div>
