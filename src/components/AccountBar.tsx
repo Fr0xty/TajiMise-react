@@ -15,10 +15,10 @@ const AccountBar = () => {
                 setLoggedIn(true);
 
                 const fetchProfileReq = await fetch('/api/resource/profile');
-                const { name, profilePicture } = await fetchProfileReq.json();
+                const { name, avatarURL } = await fetchProfileReq.json();
                 setUsername(name);
-                if (profilePicture === null) return;
-                setUserPfp(profilePicture);
+                if (avatarURL === null) return;
+                setUserPfp(avatarURL);
             }
         })();
     }, []);
