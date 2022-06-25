@@ -1,7 +1,11 @@
 import '../styles/LogoutConfirmPrompt.scss';
 
-const LogoutConfirmPrompt = () => {
-    return <div className="logout-confirm-prompt"></div>;
+interface LogoutConfirmPromptProperties {
+    show: boolean;
+}
+
+const LogoutConfirmPrompt = ({ show }: LogoutConfirmPromptProperties) => {
+    return <div className={`logout-confirm-prompt ${show ? 'show' : ''}`}></div>;
 };
 
 export default LogoutConfirmPrompt;
