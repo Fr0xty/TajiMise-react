@@ -1,5 +1,5 @@
 import '../styles/UserInfo.scss';
-
+import userIcon from '../assets/images/user_icon.svg';
 import { useEffect, useState } from 'react';
 
 const UserInfo = () => {
@@ -7,10 +7,10 @@ const UserInfo = () => {
      * stores all the fetched user info
      */
     const [userInfo, setUserInfo] = useState({
-        name: null,
-        avatarURL: null,
-        strategy: null,
-        email: null,
+        name: 'loading...',
+        avatarURL: userIcon,
+        strategy: 'loading...',
+        email: 'loading...',
     });
 
     /**
@@ -35,18 +35,14 @@ const UserInfo = () => {
     return (
         <div className="user-info-wrapper">
             <div className="user-info">
-                <img
-                    src="https://cdn.discordapp.com/avatars/395587171601350676/41bc86bf1cbc3664a0cb38dca7d77663.webp?size=4096"
-                    alt="my user avatar"
-                    className="no-select"
-                />
+                <img src={userInfo.avatarURL || userIcon} alt="my user avatar" className="no-select" />
                 <ul>
                     <li>
                         <b className="no-select">
                             Username
                             <br />
                         </b>
-                        Fr0xty
+                        {userInfo.name}
                     </li>
                     <br className="no-select" />
                     <li>
@@ -54,7 +50,7 @@ const UserInfo = () => {
                             Login Strategy
                             <br />
                         </b>
-                        Discord
+                        {userInfo.strategy}
                     </li>
                     <br className="no-select" />
                     <li>
@@ -62,7 +58,7 @@ const UserInfo = () => {
                             Email
                             <br />
                         </b>
-                        abc@gmail.com
+                        {userInfo.email || '-'}
                     </li>
                 </ul>
             </div>
