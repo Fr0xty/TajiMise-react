@@ -7,7 +7,6 @@
     left: 0;
     right: 0;
     z-index: 999;
-    background: rgba($color: rgb(0, 0, 0), $alpha: 0.95);
 
     display: flex;
     justify-content: center;
@@ -17,12 +16,21 @@
         display: none;
     }
 
+    .background {
+        position: absolute;
+        z-index: 998;
+        background: rgba($color: rgb(0, 0, 0), $alpha: 0.9);
+        height: 100%;
+        width: 100%;
+    }
+
     .message-box {
-        background: var(--jet);
+        background: var(--baby-powder);
         padding: 1.5em 2em;
         width: 23em;
         border-radius: 0.4em;
-        color: var(--baby-powder);
+        color: var(--jet);
+        z-index: 999;
 
         h2 {
             margin: 0;
@@ -39,15 +47,15 @@
 
             button {
                 font-size: 0.9em;
-                padding: 0.7em 1.1em;
+                padding: 0.7em 1.3em;
                 margin: 0 0.5em;
                 border-radius: 0.4em;
                 border: none;
-                color: var(--baby-powder);
                 cursor: pointer;
 
                 &.cancel-btn {
                     background: none;
+                    color: var(--jet);
 
                     &:hover {
                         text-decoration: underline;
@@ -55,6 +63,7 @@
                 }
 
                 &.logout-btn {
+                    color: var(--baby-powder);
                     font-weight: bold;
                     background: var(--danger);
                     margin-right: 0;

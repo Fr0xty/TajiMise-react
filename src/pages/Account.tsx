@@ -2,18 +2,15 @@ import '../styles/Account.scss';
 
 import UserInfo from '../components/UserInfo';
 import LogoutConfirmPrompt from '../components/LogoutConfirmPrompt';
-import { useState } from 'react';
 
 const Account = () => {
-    const [showLogoutPrompt, setShowLogoutPrompt] = useState(false);
-
     const LogoutEvent = async () => {
-        setShowLogoutPrompt(true);
+        document.querySelector('.logout-confirm-prompt')?.classList.add('show');
     };
 
     return (
         <div className="account-wrapper">
-            <LogoutConfirmPrompt show={showLogoutPrompt} />
+            <LogoutConfirmPrompt />
             <div className="account">
                 <div className="content-wrapper">
                     <UserInfo />
