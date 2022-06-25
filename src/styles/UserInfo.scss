@@ -22,12 +22,18 @@
             padding: 0;
             font-size: 1.2em;
             text-align: center;
+
+            p {
+                margin: 0;
+                overflow-wrap: break-word;
+            }
         }
     }
 }
 
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 750px) {
     .user-info-wrapper .user-info {
+        width: 50vw;
         padding-left: 4em;
         padding-right: 4em;
     }

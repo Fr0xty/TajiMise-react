@@ -40,27 +40,18 @@ const UserInfo = () => {
                 <img src={userInfo.avatarURL || userIcon} alt="my user avatar" className="no-select" />
                 <ul>
                     <li>
-                        <b className="no-select">
-                            Username
-                            <br />
-                        </b>
-                        {userInfo.name}
+                        <b className="no-select">Username</b>
+                        <p>{userInfo.name}</p>
                     </li>
                     <br className="no-select" />
                     <li>
-                        <b className="no-select">
-                            Login Strategy
-                            <br />
-                        </b>
-                        {userInfo.strategy}
+                        <b className="no-select">Login Strategy</b>
+                        <p>{userInfo.strategy}</p>
                     </li>
                     <br className="no-select" />
                     <li>
-                        <b className="no-select">
-                            Email
-                            <br />
-                        </b>
-                        {userInfo.email || '-'}
+                        <b className="no-select">Email</b>
+                        <p>{userInfo.email || '-'}</p>
                     </li>
                 </ul>
             </div>
