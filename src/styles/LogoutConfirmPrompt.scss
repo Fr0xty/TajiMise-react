@@ -7,9 +7,59 @@
     left: 0;
     right: 0;
     z-index: 999;
-    background: rgba($color: rgb(0, 0, 0), $alpha: 0.8);
+    background: rgba($color: rgb(0, 0, 0), $alpha: 0.95);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:not(.show) {
         display: none;
+    }
+
+    .message-box {
+        background: var(--jet);
+        padding: 1.5em 2em;
+        width: 23em;
+        border-radius: 0.4em;
+        color: var(--baby-powder);
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0.4em 0 0;
+        }
+
+        .buttons {
+            margin-top: 3em;
+            display: flex;
+            justify-content: right;
+
+            button {
+                font-size: 0.9em;
+                padding: 0.7em 1.1em;
+                margin: 0 0.5em;
+                border-radius: 0.4em;
+                border: none;
+                color: var(--baby-powder);
+                cursor: pointer;
+
+                &.cancel-btn {
+                    background: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &.logout-btn {
+                    font-weight: bold;
+                    background: var(--danger);
+                    margin-right: 0;
+                }
+            }
+        }
     }
 }

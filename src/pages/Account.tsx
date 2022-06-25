@@ -7,7 +7,9 @@ import { useState } from 'react';
 const Account = () => {
     const [showLogoutPrompt, setShowLogoutPrompt] = useState(false);
 
-    const LogoutEvent = async () => {};
+    const LogoutEvent = async () => {
+        setShowLogoutPrompt(true);
+    };
 
     return (
         <div className="account-wrapper">
