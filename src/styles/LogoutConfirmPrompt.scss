@@ -67,6 +67,11 @@
                     font-weight: bold;
                     background: var(--danger);
                     margin-right: 0;
+                    transition: background 0.3s;
+
+                    &:hover {
+                        background: var(--danger-dark);
+                    }
                 }
             }
         }
