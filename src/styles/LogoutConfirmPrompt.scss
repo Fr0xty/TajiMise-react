@@ -77,3 +77,9 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .logout-confirm-prompt .message-box {
+        width: 70%;
+    }
+}
