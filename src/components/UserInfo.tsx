@@ -22,11 +22,12 @@ const UserInfo = () => {
             if (profileReq.status !== 200) return;
 
             const profileData = await profileReq.json();
-
             setUserInfo({
                 name: profileData.name,
                 avatarURL: profileData.avatarURL,
-                strategy: profileData.strategy,
+                strategy: profileData.strategy[0]
+                    .toUpperCase()
+                    .concat(profileData.strategy.slice(1, profileData.strategy.length)),
                 email: profileData.email,
             });
         })();
