@@ -22,6 +22,7 @@ const UserInfo = () => {
             if (profileReq.status !== 200) return;
 
             const profileData = await profileReq.json();
+
             setUserInfo({
                 name: profileData.name,
                 avatarURL: profileData.avatarURL,
