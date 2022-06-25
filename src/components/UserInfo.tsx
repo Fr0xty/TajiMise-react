@@ -33,37 +33,39 @@ const UserInfo = () => {
     }, []);
 
     return (
-        <div className="user-info">
-            <img
-                src="https://cdn.discordapp.com/avatars/395587171601350676/41bc86bf1cbc3664a0cb38dca7d77663.webp?size=4096"
-                alt="my user avatar"
-                className="no-select"
-            />
-            <ul>
-                <li>
-                    <b className="no-select">
-                        Username
-                        <br />
-                    </b>
-                    Fr0xty
-                </li>
-                <br className="no-select" />
-                <li>
-                    <b className="no-select">
-                        Login Strategy
-                        <br />
-                    </b>
-                    Discord
-                </li>
-                <br className="no-select" />
-                <li>
-                    <b className="no-select">
-                        Email
-                        <br />
-                    </b>
-                    abc@gmail.com
-                </li>
-            </ul>
+        <div className="user-info-wrapper">
+            <div className="user-info">
+                <img
+                    src="https://cdn.discordapp.com/avatars/395587171601350676/41bc86bf1cbc3664a0cb38dca7d77663.webp?size=4096"
+                    alt="my user avatar"
+                    className="no-select"
+                />
+                <ul>
+                    <li>
+                        <b className="no-select">
+                            Username
+                            <br />
+                        </b>
+                        Fr0xty
+                    </li>
+                    <br className="no-select" />
+                    <li>
+                        <b className="no-select">
+                            Login Strategy
+                            <br />
+                        </b>
+                        Discord
+                    </li>
+                    <br className="no-select" />
+                    <li>
+                        <b className="no-select">
+                            Email
+                            <br />
+                        </b>
+                        abc@gmail.com
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };
