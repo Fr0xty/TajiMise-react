@@ -8,6 +8,13 @@ const LogoutConfirmPrompt = () => {
         document.querySelector('.logout-confirm-prompt')?.classList.remove('show');
     };
 
+    const logoutClicked = async () => {
+        const req = await fetch('/api/auth/reset-session', {
+            method: 'post',
+        });
+        window.location.replace(req.url); // redirect
+    };
+
     return (
         <div className={`logout-confirm-prompt no-select`}>
             <div className="background" onClick={closePrompt} />
@@ -18,9 +25,10 @@ const LogoutConfirmPrompt = () => {
                     <button className="cancel-btn" onClick={closePrompt}>
                         Cancel
                     </button>
-                    <a href="/api/auth/reset-session">
-                        <button className="logout-btn">Log Out</button>
-                    </a>
+
+                    <button className="logout-btn" onClick={logoutClicked}>
+                        Log Out
+                    </button>
                 </div>
             </div>
         </div>
