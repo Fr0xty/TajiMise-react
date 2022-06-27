@@ -3,12 +3,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    min-height: auto;
+    min-height: 100vh;
     position: relative;
 
     .content {
         margin-top: 4em;
+        padding-bottom: 4em;
         text-align: center;
 
         h1 {
