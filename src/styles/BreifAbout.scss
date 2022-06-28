@@ -1,8 +1,10 @@
 .breif-about {
     padding-bottom: 7em;
+
     h1 {
         font-size: 3.3em;
         text-align: center;
+        margin-bottom: 1em;
     }
 
     .cards {
@@ -52,6 +54,89 @@
                 p {
                     margin: 0.4em 0;
                     width: 23em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .breif-about .cards .user-card {
+        img {
+            height: 7em;
+        }
+
+        .description {
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .breif-about {
+        padding-bottom: 2.5em;
+
+        .cards {
+            display: block;
+
+            .user-card {
+                display: block;
+                text-align: center;
+                padding: 1em 2em;
+
+                &.card-1,
+                &.card-2 {
+                    margin: 2em auto;
+                }
+
+                .description {
+                    padding: 0;
+
+                    p {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .breif-about h1 {
+        font-size: 2.6em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .breif-about .cards {
+        .user-card {
+            padding: 1em;
+
+            &.card-1,
+            &.card-2 {
+                margin: 2em auto;
+            }
+
+            .description {
+                padding: 0;
+
+                h3 span {
+                    display: block;
+                }
+
+                p {
+                    width: 80vw;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }

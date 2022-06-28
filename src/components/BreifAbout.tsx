@@ -13,7 +13,9 @@ const BreifAbout = () => {
                     <img src={ceoAvatar} alt="Tameiji avatar" />
                     <div className="description">
                         <h2>Tajima Eiji (Tameiji)</h2>
-                        <h3>CEO & Illustrator ・ he/him</h3>
+                        <h3>
+                            CEO & Illustrator<span> ・ he/him</span>
+                        </h3>
                         <p>
                             General Management of the company and the Illustrator / Creative Director for all of our
                             products.
@@ -25,7 +27,9 @@ const BreifAbout = () => {
                     <img src={fr0xtyAvatar} alt="Fr0xty avatar" />
                     <div className="description">
                         <h2>Fr0xty</h2>
-                        <h3>IoT Engineer & Graphics Designer ・they / them / any</h3>
+                        <h3>
+                            IoT Engineer & Graphics Designer<span> ・they / them / any</span>
+                        </h3>
                         <p>Handles any techology related tasks / Lead Developer and Primary Designer.</p>
                     </div>
                 </div>
@@ -34,7 +38,7 @@ const BreifAbout = () => {
                     <img src={ceoAvatar} alt="People avatar" />
                     <div className="description">
                         <h2>Name</h2>
-                        <h3>Position ・ Pronouns</h3>
+                        <h3>Position<span> ・ Pronouns</span></h3>
                         <p>What I do and am responsible for in breif.</p>
                     </div>
                 </div> */}
