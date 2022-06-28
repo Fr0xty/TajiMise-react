@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import LoginOptions from './pages/LoginOptions';
 import Products from './pages/Products';
 import { registerFetchInterceptor } from './utils/fetchInterceptor';
+import AdminProfile from './pages/AdminProfile';
 
 const App = () => {
     registerFetchInterceptor();
@@ -27,6 +28,9 @@ const App = () => {
                     {/* account navigations */}
                     <Route path="/account" element={<Account />}></Route>
                     <Route path="/cart" element={<Cart />}></Route>
+
+                    {/* admin info */}
+                    <Route path="/admin/:adminHandle" element={<AdminProfile />}></Route>
                 </Routes>
             </Router>
         </div>
