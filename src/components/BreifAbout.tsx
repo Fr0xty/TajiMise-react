@@ -30,14 +30,14 @@ const BreifAbout = () => {
                     </div>
                 </div>
 
-                <div className="card-3 user-card">
+                {/* <div className="card-3 user-card">
                     <img src={ceoAvatar} alt="People avatar" />
                     <div className="description">
                         <h2>Name</h2>
                         <h3>Position ・ Pronouns</h3>
                         <p>What I do and am responsible for in breif.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
