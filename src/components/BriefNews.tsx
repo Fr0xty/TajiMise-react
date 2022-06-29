@@ -1,4 +1,5 @@
 import '../styles/BreifNews.scss';
+import ArticleCard from './ArticleCard';
 
 const BreifNews = () => {
     return (
@@ -6,6 +7,9 @@ const BreifNews = () => {
             <div className="header">
                 <span className="home-sub-header">NEWS</span>
                 <h1 className="home-main-header">Latest Updates</h1>
+            </div>
+            <div className="articles">
+                <ArticleCard thumbnailURL="" />
             </div>
         </div>
     );
