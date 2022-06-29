@@ -14,7 +14,7 @@ const BreifAbout = () => {
                     <div className="description">
                         <h2>Tajima Eiji (Tameiji)</h2>
                         <h3>
-                            CEO & Illustrator<span> ・ he/him</span>
+                            CEO & Illustrator<span> ・ he / him</span>
                         </h3>
                         <p>
                             General Management of the company and the Illustrator / Creative Director for all of our
