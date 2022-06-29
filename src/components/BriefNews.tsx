@@ -4,8 +4,8 @@ const BreifNews = () => {
     return (
         <div className="breif-news">
             <div className="header">
-                <span>NEWS</span>
-                <h1>Latest Updates</h1>
+                <span className="home-sub-header">NEWS</span>
+                <h1 className="home-main-header">Latest Updates</h1>
             </div>
         </div>
     );

@@ -1,7 +1,9 @@
+import '../styles/Home.scss';
+import '../styles/HomeHeaders.scss';
+
 import BreifAbout from '../components/BreifAbout';
 import BreifNews from '../components/BriefNews';
 import Hero from '../components/Hero';
-import '../styles/Home.scss';
 
 const Home = () => {
     return (

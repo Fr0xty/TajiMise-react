@@ -6,7 +6,7 @@ import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
 const BreifAbout = () => {
     return (
         <div className="breif-about">
-            <h1>Who run TajiMisé?</h1>
+            <h1 className="home-main-header">Who run TajiMisé?</h1>
 
             <div className="cards">
                 <div className="card-1 user-card">
