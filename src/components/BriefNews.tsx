@@ -8,7 +8,7 @@ const BreifNews = () => {
                 <h1 className="home-main-header">Latest Updates</h1>
             </div>
             <div className="articles">
-                <span>Articles coming soon.</span>
+                <span className="coming-soon-text">Articles coming soon.</span>
             </div>
         </div>
     );
