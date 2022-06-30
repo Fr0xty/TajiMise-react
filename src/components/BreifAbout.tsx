@@ -2,6 +2,8 @@ import '../styles/BreifAbout.scss';
 
 import ceoAvatar from '../assets/images/tameiji_avatar.webp';
 import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
+import makitoAvatar from '../assets/images/makito_avatar.webp';
+import arataAvatar from '../assets/images/arata_avatar.webp';
 
 const BreifAbout = () => {
     return (
@@ -34,14 +36,28 @@ const BreifAbout = () => {
                     </div>
                 </div>
 
-                {/* <div className="card-3 user-card">
-                    <img src={ceoAvatar} alt="People avatar" />
+                <div className="card-3 user-card">
+                    <img src={makitoAvatar} alt="Makito avatar" />
                     <div className="description">
-                        <h2>Name</h2>
-                        <h3>Position<span> ・ Pronouns</span></h3>
-                        <p>What I do and am responsible for in breif.</p>
+                        <h2>Dr. Makito</h2>
+                        <h3>
+                            Receptionist<span> ・ he / him</span>
+                        </h3>
+                        <p>Marketing and increasing exposure of the company.</p>
                     </div>
-                </div> */}
+                </div>
+
+                <div className="card-4 user-card">
+                    <img src={arataAvatar} alt=" avatar" />
+                    <div className="description">
+                        <h2>Arata</h2>
+                        <h3>
+                            Accountant
+                            <span>・ he / him</span>
+                        </h3>
+                        <p>Helps in finances of the company by collecting, tracking, and auditing cashflow.</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
