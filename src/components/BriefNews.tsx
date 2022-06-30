@@ -1,5 +1,4 @@
 import '../styles/BreifNews.scss';
-import ArticleCard from './ArticleCard';
 
 const BreifNews = () => {
     return (
@@ -9,7 +8,7 @@ const BreifNews = () => {
                 <h1 className="home-main-header">Latest Updates</h1>
             </div>
             <div className="articles">
-                <ArticleCard thumbnailURL="" />
+                <span>Articles coming soon.</span>
             </div>
         </div>
     );
