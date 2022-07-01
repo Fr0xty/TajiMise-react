@@ -24,16 +24,3 @@ const AdminCart = ({ avatar, name, position, pronouns, description, classNames }
 };
 
 export default AdminCart;
-
-{
-    /* <div className="card-3 user-card">
-                    <img src={makitoAvatar} alt="Makito avatar" />
-                    <div className="description">
-                        <h2>Dr. Makito</h2>
-                        <h3>
-                            Receptionist<span> ・ he / him</span>
-                        </h3>
-                        <p>Marketing and increasing exposure of the company.</p>
-                    </div>
-                </div> */
-}
