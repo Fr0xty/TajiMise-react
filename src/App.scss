@@ -46,10 +46,10 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--dark-blizzard-blue);
+    background: var(--blizzard-blue);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--blizzard-blue);
+    background: var(--dark-blizzard-blue);
 }
