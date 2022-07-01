@@ -33,3 +33,23 @@ a {
     -moz-user-select: none;
     -webkit-user-select: none;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--copper-rose);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dark-blizzard-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blizzard-blue);
+}
