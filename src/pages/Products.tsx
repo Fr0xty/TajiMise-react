@@ -23,7 +23,7 @@ const Products = () => {
         <div className="products no-select">
             <Navbar currentPage="products" noAccountNavs />
             <AccountBar />
-            {isAdmin && <AdminProductNav />}
+            {!isAdmin && <AdminProductNav />}
             <ProductSelect />
         </div>
     );
