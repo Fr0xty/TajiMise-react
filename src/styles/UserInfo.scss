@@ -5,7 +5,7 @@
         position: relative;
         width: fit-content;
         padding: 2.5em 6em 1em;
-        box-shadow: 0px 0px 7px 3px rgba(53, 53, 53, 0.15);
+        box-shadow: 0px 0px 7px 3px rgba($color: var(--jet-rgb), $alpha: 0.15);
 
         img {
             position: absolute;
@@ -15,7 +15,7 @@
             margin: 0 auto;
             height: 8em;
             border-radius: 50%;
-            box-shadow: 0px 0px 7px 3px rgba(53, 53, 53, 0.5);
+            box-shadow: 0px 0px 7px 3px rgba($color: var(--jet-rgb), $alpha: 0.5);
         }
 
         ul {
