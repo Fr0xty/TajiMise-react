@@ -3,11 +3,11 @@ import '../styles/AdminProductNav.scss';
 const AdminProductNav = () => {
     return (
         <div className="admin-product-add">
-            <div className="sell-box">
-                <button>Sell</button>
+            <div className="btn sell-btn">
+                <span>Sell</span>
             </div>
-            <div className="orders-box">
-                <button>Orders</button>
+            <div className="btn orders-btn">
+                <span>Orders</span>
             </div>
         </div>
     );

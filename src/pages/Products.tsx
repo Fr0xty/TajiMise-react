@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import ProductSelect from '../components/ProductSelect';
 
 const Products = () => {
-    const [isAdmin, setIsAdmin] = useState(false);
+    const [isAdmin, setIsAdmin] = useState(true);
 
     useEffect(() => {
         (async () => {
