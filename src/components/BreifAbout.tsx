@@ -42,7 +42,7 @@ const BreifAbout = () => {
                     description="Helps in finances of the company by collecting, tracking, and auditing cashflow."
                     name="Arata"
                     position="Accountant"
-                    pronouns="he / him"
+                    pronouns="they / them / it"
                     classNames="arata-card user-card"
                 />
             </div>
