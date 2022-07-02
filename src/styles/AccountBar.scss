@@ -7,6 +7,7 @@
 
     img {
         height: 3em;
+        padding: 0.4em;
         border-radius: 50%;
     }
 
@@ -24,10 +25,15 @@
         display: flex;
         justify-content: space-between;
 
+        img {
+            margin: auto 0;
+        }
+
         p.account-name {
             font-size: 1.5em;
+            height: fit-content;
             padding: 0;
-            margin: 0;
+            margin: auto 0;
             padding: 0.3em 0.6em 0.3em;
             color: var(--jet);
         }
@@ -37,5 +43,25 @@
 @media screen and (max-width: 1188px) {
     .account-bar {
         margin: 1.5em 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .account-bar {
+        img {
+            height: 2.5em;
+        }
+
+        .account-navigation {
+            p.account-name {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .account-bar {
+        padding: 0 2em;
     }
 }
