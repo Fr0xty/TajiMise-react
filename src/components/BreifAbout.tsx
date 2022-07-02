@@ -4,7 +4,7 @@ import tameijiAvatar from '../assets/images/tameiji_avatar.webp';
 import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
 import makitoAvatar from '../assets/images/makito_avatar.webp';
 import arataAvatar from '../assets/images/arata_avatar.webp';
-import AdminCart from './AdminCart';
+import AdminCard from './AdminCard';
 
 const BreifAbout = () => {
     return (
@@ -12,7 +12,7 @@ const BreifAbout = () => {
             <h1 className="home-main-header">Who run TajiMisé?</h1>
 
             <div className="cards">
-                <AdminCart
+                <AdminCard
                     avatar={tameijiAvatar}
                     description="General Management of the company and the Illustrator / Creative Director for all of our
                             products."
@@ -21,7 +21,7 @@ const BreifAbout = () => {
                     pronouns="he / him"
                     classNames="card-1 user-card"
                 />
-                <AdminCart
+                <AdminCard
                     avatar={fr0xtyAvatar}
                     description="Handles any techology related tasks / Lead Developer and Primary Designer."
                     name="Fr0xty"
@@ -29,7 +29,7 @@ const BreifAbout = () => {
                     pronouns="they / them / any"
                     classNames="card-2 user-card"
                 />
-                <AdminCart
+                <AdminCard
                     avatar={makitoAvatar}
                     description="Marketing and increasing exposure of the company."
                     name="Dr. Makito"
@@ -37,7 +37,7 @@ const BreifAbout = () => {
                     pronouns="he / him"
                     classNames="card-3 user-card"
                 />
-                <AdminCart
+                <AdminCard
                     avatar={arataAvatar}
                     description="Helps in finances of the company by collecting, tracking, and auditing cashflow."
                     name="Arata"

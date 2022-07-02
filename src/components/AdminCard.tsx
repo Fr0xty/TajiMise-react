@@ -1,4 +1,4 @@
-interface AdminCartProperties {
+interface AdminCardProperties {
     avatar: string;
     name: string;
     position: string;
@@ -7,7 +7,7 @@ interface AdminCartProperties {
     classNames?: string;
 }
 
-const AdminCart = ({ avatar, name, position, pronouns, description, classNames }: AdminCartProperties) => {
+const AdminCard = ({ avatar, name, position, pronouns, description, classNames }: AdminCardProperties) => {
     return (
         <div className={`admin-card ${classNames}`}>
             <img src={avatar} alt={`${name} avatar`} />
@@ -23,4 +23,4 @@ const AdminCart = ({ avatar, name, position, pronouns, description, classNames }
     );
 };
 
-export default AdminCart;
+export default AdminCard;
