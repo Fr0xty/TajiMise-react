@@ -1,5 +1,4 @@
 import '../styles/Home.scss';
-import '../styles/HomeHeaders.scss';
 
 import BreifAbout from '../components/BreifAbout';
 import BreifNews from '../components/BriefNews';
