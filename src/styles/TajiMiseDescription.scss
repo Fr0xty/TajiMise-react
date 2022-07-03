@@ -1,8 +1,68 @@
-.tajimise-description {
-    h1 {
-        margin-top: 5em;
-        color: var(--jet);
-        display: block;
-        text-align: center;
+.tajimise-description-wrapper {
+    .background {
+        position: absolute;
+        top: 0;
+        z-index: -999;
+        height: 100%;
+        width: 100%;
+        background: url(../assets/images/network_background.png);
+        filter: opacity(50%);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .tajimise-description {
+        width: 80%;
+        margin: 6em auto 4em;
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: var(--jet);
+        }
+
+        p {
+            font-size: 1.3em;
+            margin: 0;
+            margin-top: 1em;
+        }
+
+        ul {
+            margin-top: 1.5em;
+
+            li {
+                margin: 0.3em 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .tajimise-description-wrapper .tajimise-description {
+        h1 {
+            font-size: 2.8em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tajimise-description-wrapper .tajimise-description {
+        width: 80%;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        ul li {
+            font-size: 0.9em;
+        }
     }
 }
