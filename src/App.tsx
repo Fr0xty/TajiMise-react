@@ -1,5 +1,9 @@
 import './App.scss';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { registerFetchInterceptor } from './utils/fetchInterceptor';
+import './utils/i18next';
 
 import About from './pages/About';
 import Account from './pages/Account';
@@ -7,7 +11,6 @@ import Cart from './pages/Cart';
 import Home from './pages/Home';
 import LoginOptions from './pages/LoginOptions';
 import Products from './pages/Products';
-import { registerFetchInterceptor } from './utils/fetchInterceptor';
 import AdminProfile from './pages/AdminProfile';
 import Sell from './pages/Sell';
 import Orders from './pages/Orders';
