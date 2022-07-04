@@ -2,7 +2,7 @@ import './App.scss';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { registerFetchInterceptor } from './utils/fetchInterceptor';
+import './utils/fetchInterceptor';
 import './utils/i18next';
 
 import About from './pages/About';
@@ -16,8 +16,6 @@ import Sell from './pages/Sell';
 import Orders from './pages/Orders';
 
 const App = () => {
-    registerFetchInterceptor();
-
     return (
         <div className="app">
             <Router>
