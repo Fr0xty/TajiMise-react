@@ -1,6 +1,8 @@
 import './App.scss';
 
+import i18next from 'i18next';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import './utils/fetchInterceptor';
 import './utils/i18next';
