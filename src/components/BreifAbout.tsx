@@ -2,7 +2,7 @@ import '../styles/BreifAbout.scss';
 
 import tameijiAvatar from '../assets/images/tameiji_avatar.webp';
 import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
-import makitoAvatar from '../assets/images/makito_avatar.webp';
+import makitoAvatar from '../assets/images/capirin_avatar.webp';
 import arataAvatar from '../assets/images/arata_avatar.webp';
 import AdminCard from './AdminCard';
 
@@ -14,32 +14,32 @@ const BreifAbout = () => {
             <div className="cards">
                 <AdminCard
                     avatar={tameijiAvatar}
-                    description="General Management of the company and the Illustrator / Creative Director for all of our
+                    description="General Management of the company and Artist for our
                             products."
                     name="Tajima Eiji (Tameiji)"
-                    position="CEO & Illustrator"
+                    position="CEO & Artist"
                     pronouns="he / him"
                     classNames="tameiji-card user-card"
                 />
                 <AdminCard
+                    avatar={makitoAvatar}
+                    description="Artist who fullfils our products."
+                    name="capirin"
+                    position="Artist"
+                    pronouns="he / him"
+                    classNames="capirin-card user-card"
+                />
+                <AdminCard
                     avatar={fr0xtyAvatar}
-                    description="Handles any techology related tasks / Lead Developer and Primary Designer."
+                    description="Handles any technology-related tasks / Lead Developer and Primary Designer."
                     name="Fr0xty"
                     position="IoT Engineer & Graphics Designer"
                     pronouns="they / them / any"
                     classNames="fr0xty-card user-card"
                 />
                 <AdminCard
-                    avatar={makitoAvatar}
-                    description="Marketing and increasing exposure of the company."
-                    name="Dr. Makito"
-                    position="Receptionist"
-                    pronouns="he / him"
-                    classNames="makito-card user-card"
-                />
-                <AdminCard
                     avatar={arataAvatar}
-                    description="Helps in finances of the company by collecting, tracking, and auditing cashflow."
+                    description="Helps with the finances of the company by collecting, tracking, and auditing cashflow."
                     name="Arata"
                     position="Accountant"
                     pronouns="they / them / it"

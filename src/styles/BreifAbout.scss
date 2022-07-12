@@ -24,14 +24,14 @@
                 border: 2px dashed var(--tameiji-color);
             }
 
-            &.fr0xty-card {
+            &.capirin-card {
                 margin-top: 7em;
-                border: 2px dashed var(--fr0xty-color);
+                border: 2px dashed var(--capirin-color);
             }
 
-            &.makito-card {
+            &.fr0xty-card {
                 margin-bottom: 7em;
-                border: 2px dashed var(--makito-color);
+                border: 2px dashed var(--fr0xty-color);
             }
 
             &.arata-card {
@@ -102,8 +102,8 @@
                 padding: 1em 2em;
 
                 &.tameiji-card,
+                &.capirin-card,
                 &.fr0xty-card,
-                &.makito-card,
                 &.arata-card {
                     margin: 2em auto;
                 }
