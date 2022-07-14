@@ -19,7 +19,7 @@ const BreifAbout = () => {
                     name="Tajima Eiji (Tameiji)"
                     position="CEO & Artist"
                     pronouns="he / him"
-                    classNames="tameiji-card user-card"
+                    className="tameiji-card admin-card"
                 />
                 <AdminCard
                     avatar={makitoAvatar}
@@ -27,7 +27,7 @@ const BreifAbout = () => {
                     name="capirin"
                     position="Artist"
                     pronouns="he / him"
-                    classNames="capirin-card user-card"
+                    className="capirin-card admin-card"
                 />
                 <AdminCard
                     avatar={fr0xtyAvatar}
@@ -35,7 +35,7 @@ const BreifAbout = () => {
                     name="Fr0xty"
                     position="IoT Engineer & Graphics Designer"
                     pronouns="they / them / any"
-                    classNames="fr0xty-card user-card"
+                    className="fr0xty-card admin-card"
                 />
                 <AdminCard
                     avatar={arataAvatar}
@@ -43,7 +43,7 @@ const BreifAbout = () => {
                     name="Arata"
                     position="Accountant"
                     pronouns="they / them / it"
-                    classNames="arata-card user-card"
+                    className="arata-card admin-card"
                 />
             </div>
         </div>

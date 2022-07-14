@@ -12,7 +12,7 @@
         grid-template-columns: auto auto;
         justify-content: space-evenly;
 
-        .user-card {
+        .admin-card {
             display: flex;
             width: auto;
             height: max-content;
@@ -70,7 +70,7 @@
 }
 
 @media screen and (max-width: 1220px) {
-    .breif-about .cards .user-card {
+    .breif-about .cards .admin-card {
         img {
             height: 7em;
         }
@@ -96,7 +96,7 @@
         .cards {
             display: block;
 
-            .user-card {
+            .admin-card {
                 display: block;
                 text-align: center;
                 padding: 1em 2em;
@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 530px) {
     .breif-about .cards {
-        .user-card {
+        .admin-card {
             padding: 1em;
 
             &.tameiji-card,

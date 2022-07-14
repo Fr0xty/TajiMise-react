@@ -4,12 +4,12 @@ interface AdminCardProperties {
     position: string;
     pronouns: string;
     description: string;
-    classNames?: string;
+    className?: string;
 }
 
-const AdminCard = ({ avatar, name, position, pronouns, description, classNames }: AdminCardProperties) => {
+const AdminCard = ({ avatar, name, position, pronouns, description, className }: AdminCardProperties) => {
     return (
-        <div className={`admin-card ${classNames}`}>
+        <div className={`admin-card ${className}`}>
             <img src={avatar} alt={`${name} avatar`} />
             <div className="description">
                 <h2>{name}</h2>
