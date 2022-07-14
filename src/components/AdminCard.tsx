@@ -8,26 +8,29 @@ interface AdminCardProperties {
     position: string;
     pronouns: string;
     description: string;
+    handle: string;
     className?: string;
 }
 
-const AdminCard = ({ avatar, name, position, pronouns, description, className }: AdminCardProperties) => {
+const AdminCard = ({ avatar, name, position, pronouns, description, handle, className }: AdminCardProperties) => {
     return (
-        <div className={`admin-card ${className}`}>
-            <img src={avatar} alt={`${name} avatar`} className="avatar" />
-            <div className="description">
-                <h2>{name}</h2>
-                <h3>
-                    {position}
-                    <span> ・ {pronouns}</span>
-                </h3>
-                <p>{description}</p>
+        <a href={`/admin/${handle}`}>
+            <div className={`admin-card ${className}`}>
+                <img src={avatar} alt={`${name} avatar`} className="avatar" />
+                <div className="description">
+                    <h2>{name}</h2>
+                    <h3>
+                        {position}
+                        <span> ・ {pronouns}</span>
+                    </h3>
+                    <p>{description}</p>
+                </div>
+                <div className="see-profile-text no-select">
+                    <p>See Profile</p>
+                    <img src={chevronRight} alt="arrow" />
+                </div>
             </div>
-            <div className="see-profile-text no-select">
-                <p>See Profile</p>
-                <img src={chevronRight} alt="arrow" />
-            </div>
-        </div>
+        </a>
     );
 };
 

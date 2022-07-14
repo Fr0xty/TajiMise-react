@@ -2,7 +2,7 @@ import '../styles/BreifAbout.scss';
 
 import tameijiAvatar from '../assets/images/tameiji_avatar.webp';
 import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
-import makitoAvatar from '../assets/images/capirin_avatar.webp';
+import capirinAvatar from '../assets/images/capirin_avatar.webp';
 import arataAvatar from '../assets/images/arata_avatar.webp';
 import AdminCard from './AdminCard';
 
@@ -19,14 +19,16 @@ const BreifAbout = () => {
                     name="Tajima Eiji (Tameiji)"
                     position="CEO & Artist"
                     pronouns="he / him"
+                    handle="tameiji"
                     className="tameiji-card"
                 />
                 <AdminCard
-                    avatar={makitoAvatar}
+                    avatar={capirinAvatar}
                     description="Artist who fullfils our products."
                     name="capirin"
                     position="Artist"
                     pronouns="he / him"
+                    handle="capirin"
                     className="capirin-card"
                 />
                 <AdminCard
@@ -35,6 +37,7 @@ const BreifAbout = () => {
                     name="Fr0xty"
                     position="IoT Engineer & Graphics Designer"
                     pronouns="they / them / any"
+                    handle="fr0xty"
                     className="fr0xty-card"
                 />
                 <AdminCard
@@ -43,6 +46,7 @@ const BreifAbout = () => {
                     name="Arata"
                     position="Accountant"
                     pronouns="they / them / it"
+                    handle="arata"
                     className="arata-card"
                 />
             </div>
