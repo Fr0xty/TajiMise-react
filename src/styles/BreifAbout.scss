@@ -14,12 +14,48 @@
     }
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1150px) {
     .breif-about {
         padding-bottom: 2.5em;
 
-        .cards {
-            display: block;
+        .cards-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .cards {
+                width: auto;
+                display: inline-block;
+
+                .admin-card {
+                    margin: 0;
+                    margin: 2em 0;
+
+                    &.tameiji-card,
+                    &.fr0xty-card {
+                        margin-right: 5em;
+                    }
+
+                    &.capirin-card,
+                    &.arata-card {
+                        margin-left: 5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .breif-about .cards-wrapper .cards .admin-card {
+        &.tameiji-card,
+        &.fr0xty-card {
+            margin-right: 0em;
+        }
+
+        &.capirin-card,
+        &.arata-card {
+            margin-left: 0em;
         }
     }
 }

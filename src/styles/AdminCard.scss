@@ -1,6 +1,7 @@
 .admin-card {
     position: relative;
     display: flex;
+    justify-content: left;
     width: auto;
     height: max-content;
     padding: 1em;
@@ -37,7 +38,7 @@
 
     .description {
         height: fit-content;
-        margin: auto 0;
+        margin: auto;
         padding-left: 1em;
 
         h2 {
@@ -111,18 +112,11 @@
     }
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 700px) {
     .admin-card {
         display: block;
         text-align: center;
         padding: 1em 2em;
-
-        &.tameiji-card,
-        &.capirin-card,
-        &.fr0xty-card,
-        &.arata-card {
-            margin: 2em auto;
-        }
 
         .description {
             padding: 0;
@@ -135,7 +129,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 650px) {
     .admin-card {
         padding: 1em;
 
@@ -152,7 +146,7 @@
             }
 
             p {
-                width: 80vw;
+                width: 70vw;
                 margin-left: auto;
                 margin-right: auto;
             }
