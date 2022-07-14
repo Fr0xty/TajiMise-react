@@ -1,9 +1,12 @@
 .admin-card {
+    position: relative;
     display: flex;
     width: auto;
     height: max-content;
     padding: 1em;
     margin: 0.5em;
+    transition: all 0.3s;
+    transition-property: filter background;
 
     &.tameiji-card {
         margin-bottom: 7em;
@@ -25,7 +28,7 @@
         border: 2px dashed var(--arata-color);
     }
 
-    img {
+    img.avatar {
         height: 9em;
         border-radius: 50%;
         margin: auto 0;
@@ -49,6 +52,41 @@
         p {
             margin: 0.4em 0;
             width: 23em;
+        }
+    }
+
+    .see-profile-text {
+        position: absolute;
+        color: white;
+        font-size: 2em;
+        right: 10%;
+        opacity: 0;
+        height: 80%;
+        margin: auto 0;
+        transition: opacity 0.4s;
+        display: flex;
+
+        p {
+            height: fit-content;
+            margin: auto 0;
+        }
+        img {
+            height: 1.3em;
+            margin: auto 0 auto 0.4em;
+            padding-top: 0.3em;
+        }
+    }
+
+    &:hover {
+        background: rgba($color: var(--jet-rgb), $alpha: 0.8);
+
+        img.avatar,
+        .description {
+            filter: blur(3px);
+        }
+
+        div.see-profile-text {
+            opacity: 100%;
         }
     }
 }
