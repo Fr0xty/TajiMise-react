@@ -1,3 +1,5 @@
+import '../styles/AdminCard.scss';
+
 interface AdminCardProperties {
     avatar: string;
     name: string;
