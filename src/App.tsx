@@ -1,8 +1,6 @@
 import './App.scss';
 
-import i18next from 'i18next';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 import './utils/fetchInterceptor';
 import './utils/i18next';
@@ -14,8 +12,6 @@ import Home from './pages/Home';
 import LoginOptions from './pages/LoginOptions';
 import Products from './pages/Products';
 import AdminProfile from './pages/AdminProfile';
-import Sell from './pages/Sell';
-import Orders from './pages/Orders';
 
 const App = () => {
     return (
@@ -36,10 +32,6 @@ const App = () => {
 
                     {/* admin info */}
                     <Route path="/admin/:adminHandle" element={<AdminProfile />} />
-
-                    {/* admin product nav */}
-                    <Route path="/sell" element={<Sell />} />
-                    <Route path="/orders" element={<Orders />} />
                 </Routes>
             </Router>
         </div>
