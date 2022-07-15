@@ -25,8 +25,8 @@ const AdminCard = ({ avatar, name, position, pronouns, description, handle, clas
                     </h3>
                     <p>{description}</p>
                 </div>
-                <div className="see-profile-text no-select">
-                    <p>See Profile</p>
+                <div className="view-profile-text no-select">
+                    <p>View Profile</p>
                     <img src={chevronRight} alt="arrow" />
                 </div>
             </div>
