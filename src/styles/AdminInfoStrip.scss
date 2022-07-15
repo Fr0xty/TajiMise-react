@@ -1,32 +1,39 @@
-.admin-info-strip {
-    background: rgba($color: var(--lavender-blue-rgb), $alpha: 0.5);
-    display: inline-block;
+.admin-info-strip-wrapper {
+    background: rgba($color: var(--lavender-blue-rgb), $alpha: 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 3em 2em;
     border: 1px dotted var(--jet);
     border-radius: 0.2em;
+    margin-right: 1em;
 
-    .avatar {
-        height: 15em;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
-        border: 2px solid var(--jet);
-    }
+    .admin-info-strip {
+        margin: 0;
 
-    .admin-name {
-        font-size: 2em;
-        margin-bottom: 0;
-    }
+        .avatar {
+            height: 15em;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid var(--jet);
+        }
 
-    .admin-handle {
-        color: rgba($color: var(--jet-rgb), $alpha: 0.6);
-        font-size: 1.5em;
-        margin-top: 0.1em;
-    }
+        .admin-name {
+            font-size: 2em;
+            margin-bottom: 0;
+        }
 
-    .admin-position {
-        color: var(--jet);
-        margin-top: 2em;
-        text-decoration: underline;
+        .admin-handle {
+            color: rgba($color: var(--jet-rgb), $alpha: 0.6);
+            font-size: 1.5em;
+            margin-top: 0.1em;
+        }
+
+        .admin-position {
+            color: var(--jet);
+            margin-top: 5em;
+            text-decoration: underline;
+        }
     }
 }
