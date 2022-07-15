@@ -1,0 +1,36 @@
+.admin-info-body {
+    width: 60%;
+
+    pre {
+        font-size: 1em;
+
+        span {
+            color: rgba($color: var(--jet-rgb), $alpha: 0.5);
+        }
+    }
+
+    .section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5em 1.5em;
+        border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
+        border-radius: 0.5em;
+    }
+
+    .bio p {
+        color: var(--jet);
+    }
+
+    .pronouns {
+        margin-top: 2em;
+
+        .pronouns-content {
+            display: flex;
+            justify-content: space-evenly;
+
+            p {
+                display: inline;
+            }
+        }
+    }
+}

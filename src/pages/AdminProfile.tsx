@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { AdminInfo } from 'tajimise';
 import AdminInfoStrip from '../components/AdminInfoStrip';
 import Navbar from '../components/Navbar';
+import AdminInfoBody from '../components/AdminInfoBody';
 
 interface AdminInfoState extends AdminInfo {
     exists: boolean;
@@ -49,6 +50,7 @@ const AdminProfile = () => {
                             handle={adminInfo.handle}
                             position={adminInfo.position}
                         />
+                        <AdminInfoBody handle={adminInfo.handle} bio={adminInfo.bio} pronouns={adminInfo.pronouns} />
                     </div>
                 </>
             )}

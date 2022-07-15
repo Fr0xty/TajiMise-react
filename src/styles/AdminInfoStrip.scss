@@ -1,9 +1,9 @@
 .admin-info-strip {
-    border: 1px dotted var(--jet);
     background: rgba($color: var(--lavender-blue-rgb), $alpha: 0.4);
     display: inline-block;
     padding: 3em 2em;
-    color: var(--jet);
+    border: 1px dotted var(--jet);
+    border-radius: 0.2em;
 
     .avatar {
         height: 15em;
@@ -23,6 +23,7 @@
     }
 
     .admin-position {
+        color: var(--jet);
         margin-top: 2em;
         text-decoration: underline;
     }
