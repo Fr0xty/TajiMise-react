@@ -1,0 +1,29 @@
+.admin-info-strip {
+    border: 1px dotted var(--jet);
+    background: rgba($color: var(--lavender-blue-rgb), $alpha: 0.4);
+    display: inline-block;
+    padding: 3em 2em;
+    color: var(--jet);
+
+    .avatar {
+        height: 15em;
+        border-radius: 50%;
+        border: 2px solid var(--jet);
+    }
+
+    .admin-name {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .admin-handle {
+        color: rgba($color: var(--jet-rgb), $alpha: 0.6);
+        font-size: 1.5em;
+        margin-top: 0.1em;
+    }
+
+    .admin-position {
+        margin-top: 2em;
+        text-decoration: underline;
+    }
+}

@@ -1,13 +1,10 @@
 import '../styles/AdminProfile.scss';
 
-import twitterLogo from '../assets/images/twitter_logo.svg';
-import youtubeLogo from '../assets/images/youtube_logo.svg';
-import instagramLogo from '../assets/images/instagram_logo.svg';
-import pixivLogo from '../assets/images/pixiv_logo.svg';
-
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { AdminInfo } from 'tajimise';
+import AdminInfoStrip from '../components/AdminInfoStrip';
+import Navbar from '../components/Navbar';
 
 interface AdminInfoState extends AdminInfo {
     exists: boolean;
@@ -43,9 +40,17 @@ const AdminProfile = () => {
     return (
         <div className="admin-profile">
             {adminInfo.exists && (
-                <div className="admin-profile">
-                    <img src={adminInfo.avatar} alt={`${adminInfo.name}'s avatar`} />
-                </div>
+                <>
+                    <Navbar />
+                    <div className="content">
+                        <AdminInfoStrip
+                            avatarURL={adminInfo.avatar}
+                            name={adminInfo.name}
+                            handle={adminInfo.handle}
+                            position={adminInfo.position}
+                        />
+                    </div>
+                </>
             )}
 
             {!adminInfo.exists && <div className="admin-not-exist">Admin does not exists.</div>}
