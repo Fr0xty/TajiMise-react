@@ -12,7 +12,7 @@
         margin: 0;
 
         .avatar {
-            height: 15em;
+            width: 15em;
             border-radius: 50%;
             display: block;
             margin: 0 auto;
@@ -34,6 +34,26 @@
             color: var(--jet);
             margin-top: 5em;
             text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .admin-info-strip-wrapper .admin-info-strip {
+        .avatar {
+            width: 11em;
+        }
+
+        .admin-name {
+            font-size: 1.7em;
+        }
+
+        .admin-handle {
+            font-size: 1.3em;
+        }
+
+        .admin-position {
+            font-size: 0.9em;
         }
     }
 }

@@ -14,3 +14,38 @@
         margin-left: 1em;
     }
 }
+
+@media screen and (max-width: 915px) {
+    .admin-profile {
+        .content {
+            margin-top: 0;
+            display: block;
+        }
+
+        .admin-info-strip-wrapper {
+            width: fit-content;
+            padding: 3em 4em;
+            text-align: center;
+            margin: 0 auto;
+
+            .admin-info-strip .admin-position {
+                margin-top: 3em;
+            }
+        }
+
+        .admin-info-body {
+            margin: 0;
+            width: 100%;
+            margin: 3em auto;
+
+            .section {
+                width: 80%;
+                margin: 3em auto;
+            }
+
+            .wrapper-socials {
+                width: 85%;
+            }
+        }
+    }
+}
