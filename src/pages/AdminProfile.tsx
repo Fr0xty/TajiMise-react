@@ -7,26 +7,36 @@ import pixivLogo from '../assets/images/pixiv_logo.svg';
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { AdminInfo } from 'tajimise';
 
-interface AdminInfoState {
+interface AdminInfoState extends AdminInfo {
     exists: boolean;
-    bio?: string;
-    socials?: any;
 }
 
 const AdminProfile = () => {
     const { adminHandle } = useParams();
-    const [adminInfo, setAdminInfo] = useState<AdminInfoState>({ exists: true });
+    const [adminInfo, setAdminInfo] = useState<AdminInfoState>({
+        exists: true,
+        avatar: '',
+        bio: 'loading..',
+        handle: 'loading..',
+        name: 'loading..',
+        position: 'loading..',
+        position_description: 'loading..',
+        pronouns: 'loading..',
+        socials: {},
+    });
 
     useEffect(() => {
         (async () => {
-            const adminInfoReq = await fetch(`/api/resource/admin-profile-info?handle=${adminHandle}`);
-            if (adminInfoReq.status === 404) return setAdminInfo({ exists: false });
+            const adminInfoReq = await fetch(`/api/resource/admin-info?handle=${adminHandle}`);
+            if (adminInfoReq.status === 404) return setAdminInfo({ ...adminInfo, exists: false });
 
             const adminInfoData = await adminInfoReq.json();
             adminInfoData.exists = true;
 
             setAdminInfo(adminInfoData);
+            console.log(adminInfoData);
         })();
     }, [adminHandle]);
 
@@ -34,13 +44,7 @@ const AdminProfile = () => {
         <div className="admin-profile">
             {adminInfo.exists && (
                 <div className="admin-profile">
-                    <div className="wrapper">
-                        <p>{adminHandle}</p>
-                        <img src={youtubeLogo} alt="a youtube icon" />
-                        <img src={twitterLogo} alt="a twitter icon" />
-                        <img src={instagramLogo} alt="a instagram icon" />
-                        <img src={pixivLogo} alt="a pixiv icon" />
-                    </div>
+                    <img src={adminInfo.avatar} alt={`${adminInfo.name}'s avatar`} />
                 </div>
             )}
 

@@ -7,9 +7,10 @@ import arataAvatar from '../assets/images/arata_avatar.webp';
 import AdminCard from './AdminCard';
 
 import { useEffect, useState } from 'react';
+import { AdminInfo } from 'tajimise';
 
 const BreifAbout = () => {
-    const [adminInfo, setAdminInfo] = useState([
+    const [adminInfo, setAdminInfo] = useState<AdminInfo[]>([
         {
             avatar: 'loading..',
             position_description: 'loading',
