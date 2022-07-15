@@ -50,7 +50,12 @@ const AdminProfile = () => {
                             handle={adminInfo.handle}
                             position={adminInfo.position}
                         />
-                        <AdminInfoBody handle={adminInfo.handle} bio={adminInfo.bio} pronouns={adminInfo.pronouns} />
+                        <AdminInfoBody
+                            handle={adminInfo.handle}
+                            bio={adminInfo.bio}
+                            pronouns={adminInfo.pronouns}
+                            socials={adminInfo.socials}
+                        />
                     </div>
                 </>
             )}

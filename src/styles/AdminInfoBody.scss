@@ -15,6 +15,7 @@
         padding: 0.5em 1.5em;
         border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
         border-radius: 0.5em;
+        display: block;
     }
 
     .bio p {
@@ -30,6 +31,77 @@
 
             p {
                 display: inline;
+            }
+        }
+    }
+
+    .wrapper-socials {
+        border: none;
+        width: 98%;
+        margin: 0 auto;
+
+        pre {
+            margin-top: 2.2em;
+            padding-left: 1em;
+        }
+
+        .socials {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+
+            .social {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
+                border-radius: 0.5em;
+                margin: 0.3em 0;
+                padding: 0.3em;
+                padding-right: 1.5em;
+                height: 4em;
+                cursor: pointer;
+                color: var(--jet);
+                transition: all 0.3s;
+                transition-property: color background;
+
+                img {
+                    display: inline-block;
+                    height: 3.3em;
+                    margin: auto 0;
+
+                    &.discord-logo {
+                        width: 2.7em;
+                        margin-left: 0.4em;
+                    }
+
+                    &.pixiv-logo {
+                        height: 3.1em;
+                        margin-left: 0.1em;
+                    }
+
+                    &.youtube-logo {
+                        width: 3em;
+                        margin-left: 0.1em;
+                    }
+
+                    &.redirect-icon {
+                        height: 1.5em;
+                        margin: auto 0;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.2em;
+                    height: fit-content;
+                    margin: auto 0;
+                }
+
+                &:hover {
+                    background: rgba($color: var(--jet-rgb), $alpha: 0.08);
+                    color: black;
+                }
             }
         }
     }
