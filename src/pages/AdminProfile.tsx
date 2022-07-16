@@ -34,7 +34,6 @@ const AdminProfile = () => {
             adminInfoData.exists = true;
 
             setAdminInfo(adminInfoData);
-            console.log(adminInfoData);
         })();
     }, [adminHandle]);
 
