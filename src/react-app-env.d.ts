@@ -20,6 +20,7 @@ declare module 'tajimise' {
             instagram?: string;
             pixiv?: string;
             youtube?: string;
+            github?: string;
         };
     }
 }

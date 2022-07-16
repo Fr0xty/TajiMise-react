@@ -5,6 +5,7 @@ import twitterLogo from '../assets/images/twitter.svg';
 import instagramLogo from '../assets/images/instagram.svg';
 import pixivLogo from '../assets/images/pixiv.svg';
 import youtubeLogo from '../assets/images/youtube.svg';
+import githubLogo from '../assets/images/github.svg';
 import redirectIcon from '../assets/images/redirect_icon.svg';
 
 interface AdminInfoBodyProperties {
@@ -17,6 +18,7 @@ interface AdminInfoBodyProperties {
         instagram?: string;
         pixiv?: string;
         youtube?: string;
+        github?: string;
     };
 }
 
@@ -86,6 +88,15 @@ const AdminInfoBody = ({ handle, bio, pronouns, socials }: AdminInfoBodyProperti
                             <div className="social">
                                 <img className="youtube-logo" src={youtubeLogo} alt="youtube logo" />
                                 <h4>Youtube</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
+                    )}
+                    {socials.github && (
+                        <a href={socials.github} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="github-logo" src={githubLogo} alt="github logo" />
+                                <h4>Github</h4>
                                 <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
                             </div>
                         </a>
