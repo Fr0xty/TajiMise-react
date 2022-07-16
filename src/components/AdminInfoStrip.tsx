@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import '../styles/AdminInfoStrip.scss';
 
 interface AdminInfoStripProperties {
@@ -8,6 +9,20 @@ interface AdminInfoStripProperties {
 }
 
 const AdminInfoStrip = ({ avatarURL, name, handle, position }: AdminInfoStripProperties) => {
+    const [showEditButton, setShowEditButton] = useState(false);
+
+    useEffect(() => {
+        (async () => {
+            if (handle === 'loading..') return;
+            const isExactAdminReq = await fetch(`/api/resource/is-admin?handle=${handle}`);
+            if (isExactAdminReq.status !== 200) return;
+
+            if ((await isExactAdminReq.text()) === 'true') {
+                setShowEditButton(true);
+            }
+        })();
+    }, [handle]);
+
     return (
         <div className="admin-info-strip-wrapper">
             <div className="admin-info-strip">
@@ -19,6 +34,7 @@ const AdminInfoStrip = ({ avatarURL, name, handle, position }: AdminInfoStripPro
                         return <h3>{pos}</h3>;
                     })}
                 </div>
+                {showEditButton && <button className="edit-profile-button">Edit Profile</button>}
             </div>
         </div>
     );

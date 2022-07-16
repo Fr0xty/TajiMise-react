@@ -32,8 +32,33 @@
 
         .admin-position {
             color: var(--jet);
-            margin-top: 5em;
+            margin-top: 3em;
             text-decoration: underline;
+
+            h3 {
+                margin: 0.3em 0;
+            }
+        }
+
+        .edit-profile-button {
+            display: block;
+            width: 100%;
+            font-size: 1em;
+            margin: 3em auto 0;
+            padding: 0.4em 0;
+            border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.25);
+            background: rgba($color: var(--dark-blizzard-blue-rgb), $alpha: 0.4);
+            color: var(--jet);
+            border-radius: 0.3em;
+            transition: all 0.2s;
+            font-weight: bold;
+            transition-property: border background color;
+
+            &:hover {
+                border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.5);
+                background: rgba($color: var(--dark-blizzard-blue-rgb), $alpha: 0.6);
+                color: black;
+            }
         }
     }
 }
