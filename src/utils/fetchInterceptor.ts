@@ -20,9 +20,9 @@ fetchIntercept.register({
             const responseDomain = /(https?:\/\/).+?\//.exec(response.url)?.shift();
 
             /**
-             * if 401 was sent by our own server
+             * if 401 was sent by our own server && is logged in
              */
-            if (response.status === 401 && responseDomain === currentDomain) {
+            if (document.cookie.includes('logged_in=') && response.status === 401 && responseDomain === currentDomain) {
                 /**
                  * invalid access token: refresh for client
                  */
