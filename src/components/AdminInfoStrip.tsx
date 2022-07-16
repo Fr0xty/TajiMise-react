@@ -14,7 +14,11 @@ const AdminInfoStrip = ({ avatarURL, name, handle, position }: AdminInfoStripPro
                 <img className="avatar" src={avatarURL} alt={`${handle}'s avatar`} />
                 <h2 className="admin-name">{name}</h2>
                 <h2 className="admin-handle">{`@${handle}`}</h2>
-                <h3 className="admin-position">{position}</h3>
+                <div className="admin-position">
+                    {position.split('&').map((pos) => {
+                        return <h3>{pos}</h3>;
+                    })}
+                </div>
             </div>
         </div>
     );
