@@ -46,39 +46,49 @@ const AdminInfoBody = ({ handle, bio, pronouns, socials }: AdminInfoBodyProperti
 
                 <div className="socials no-select">
                     {socials.discord && (
-                        <div className="social">
-                            <img className="discord-logo" src={discordLogo} alt="discord logo" />
-                            <h4>Discord</h4>
-                            <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
-                        </div>
+                        <a href={socials.discord} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="discord-logo" src={discordLogo} alt="discord logo" />
+                                <h4>Discord</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
                     )}
-                    {!socials.twitter && (
-                        <div className="social">
-                            <img className="twitter-logo" src={twitterLogo} alt="twitter logo" />
-                            <h4>Twitter</h4>
-                            <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
-                        </div>
+                    {socials.twitter && (
+                        <a href={socials.twitter} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="twitter-logo" src={twitterLogo} alt="twitter logo" />
+                                <h4>Twitter</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
                     )}
-                    {!socials.instagram && (
-                        <div className="social">
-                            <img className="instagram-logo" src={instagramLogo} alt="instagram logo" />
-                            <h4>Instagram</h4>
-                            <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
-                        </div>
+                    {socials.instagram && (
+                        <a href={socials.instagram} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="instagram-logo" src={instagramLogo} alt="instagram logo" />
+                                <h4>Instagram</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
                     )}
-                    {!socials.pixiv && (
-                        <div className="social">
-                            <img className="pixiv-logo" src={pixivLogo} alt="pixiv logo" />
-                            <h4>Pixiv</h4>
-                            <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
-                        </div>
+                    {socials.pixiv && (
+                        <a href={socials.pixiv} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="pixiv-logo" src={pixivLogo} alt="pixiv logo" />
+                                <h4>Pixiv</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
                     )}
-                    {!socials.youtube && (
-                        <div className="social">
-                            <img className="youtube-logo" src={youtubeLogo} alt="youtube logo" />
-                            <h4>Youtube</h4>
-                            <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
-                        </div>
+                    {socials.youtube && (
+                        <a href={socials.youtube} target="_blank" rel="noreferrer">
+                            <div className="social">
+                                <img className="youtube-logo" src={youtubeLogo} alt="youtube logo" />
+                                <h4>Youtube</h4>
+                                <img className="redirect-icon" src={redirectIcon} alt="redirect icon" />
+                            </div>
+                        </a>
                     )}
                 </div>
             </div>
