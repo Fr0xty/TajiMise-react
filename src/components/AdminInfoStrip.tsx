@@ -34,7 +34,11 @@ const AdminInfoStrip = ({ avatarURL, name, handle, position }: AdminInfoStripPro
                         return <h3>{pos}</h3>;
                     })}
                 </div>
-                {showEditButton && <button className="edit-profile-button">Edit Profile</button>}
+                {showEditButton && (
+                    <a href={`/admin/${handle}/edit-profile`}>
+                        <button className="edit-profile-button">Edit Profile</button>
+                    </a>
+                )}
             </div>
         </div>
     );
