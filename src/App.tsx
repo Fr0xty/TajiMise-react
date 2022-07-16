@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import LoginOptions from './pages/LoginOptions';
 import Products from './pages/Products';
 import AdminProfile from './pages/AdminProfile';
+import AdminProfileForm from './pages/AdminProfileForm';
 
 const App = () => {
     return (
@@ -19,19 +20,22 @@ const App = () => {
             <Router>
                 <Routes>
                     {/* homepage pages */}
-                    <Route path="/" element={<Home />} />
-                    <Route path="/products" element={<Products />} />
-                    <Route path="/about" element={<About />} />
+                    <Route index element={<Home />} />
+                    <Route path="products" element={<Products />} />
+                    <Route path="about" element={<About />} />
 
                     {/* verification stage */}
-                    <Route path="/login" element={<LoginOptions />} />
+                    <Route path="login" element={<LoginOptions />} />
 
                     {/* account navigations */}
-                    <Route path="/account" element={<Account />} />
-                    <Route path="/cart" element={<Cart />} />
+                    <Route path="account" element={<Account />} />
+                    <Route path="cart" element={<Cart />} />
 
                     {/* admin info */}
-                    <Route path="/admin/:adminHandle" element={<AdminProfile />} />
+                    <Route path="admin/:adminHandle">
+                        <Route index element={<AdminProfile />} />
+                        <Route path="edit-profile" element={<AdminProfileForm />} />
+                    </Route>
                 </Routes>
             </Router>
         </div>
