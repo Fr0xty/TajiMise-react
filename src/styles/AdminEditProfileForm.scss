@@ -1,0 +1,39 @@
+.admin-edit-profile-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 60%;
+        margin-top: 3em;
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+
+            .left-group {
+                display: flex;
+                justify-content: stretch;
+
+                img.back-nav {
+                    height: 2em;
+                    margin: auto 0;
+                    cursor: pointer;
+                }
+
+                h2 {
+                    margin-left: 1em;
+                    font-size: 1.7em;
+                }
+            }
+
+            button {
+                height: fit-content;
+                margin: auto 0;
+                font-size: 1em;
+                padding: 0.5em 1.2em;
+                border-radius: 2em;
+            }
+        }
+    }
+}
