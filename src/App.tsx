@@ -12,7 +12,7 @@ import Home from './pages/Home';
 import LoginOptions from './pages/LoginOptions';
 import Products from './pages/Products';
 import AdminProfile from './pages/AdminProfile';
-import AdminProfileForm from './pages/AdminProfileForm';
+import AdminEditProfile from './pages/AdminEditProfile';
 
 const App = () => {
     return (
@@ -34,7 +34,7 @@ const App = () => {
                     {/* admin info */}
                     <Route path="admin/:adminHandle">
                         <Route index element={<AdminProfile />} />
-                        <Route path="edit-profile" element={<AdminProfileForm />} />
+                        <Route path="edit-profile" element={<AdminEditProfile />} />
                     </Route>
                 </Routes>
             </Router>

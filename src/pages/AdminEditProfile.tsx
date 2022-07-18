@@ -1,8 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../styles/AdminProfileForm.scss';
+import AdminEditProfileForm from '../components/AdminEditProfileForm';
+import Navbar from '../components/Navbar';
+import '../styles/AdminEditProfile.scss';
 
-const AdminProfileForm = () => {
+const AdminEditProfile = () => {
+    const [authorized, setAuthorized] = useState(false);
+
     const { adminHandle } = useParams();
 
     const redirectBackToProfile = () => {
@@ -18,13 +22,16 @@ const AdminProfileForm = () => {
 
             if ((await isAdminReq.text()) === 'false') return redirectBackToProfile();
 
-            /**
-             * authorized access
-             */
+            setAuthorized(true);
         })();
     }, []);
 
-    return <div className="admin-profile-form">hi</div>;
+    return (
+        <div className="admin-profile-form">
+            <Navbar />
+            <AdminEditProfileForm authorized={authorized} />
+        </div>
+    );
 };
 
-export default AdminProfileForm;
+export default AdminEditProfile;
