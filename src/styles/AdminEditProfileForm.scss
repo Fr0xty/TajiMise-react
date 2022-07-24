@@ -55,13 +55,15 @@
         .form-body {
             .field {
                 position: relative;
+                height: min-content;
+                margin-bottom: 1em;
 
                 .description {
                     position: absolute;
                     display: flex;
                     justify-content: space-between;
                     width: calc(100% - 2rem);
-                    padding: 0 1rem;
+                    margin: 0 1rem;
                     top: 0.5em;
 
                     span.input-name {
@@ -69,7 +71,8 @@
                     }
 
                     span.input-limit {
-                        display: none;
+                        opacity: 0;
+                        transition: opacity 0.1s;
                     }
                 }
 
@@ -82,10 +85,17 @@
                     font-size: 1.3em;
                     border-radius: 0.3em;
                     border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
+                }
 
-                    &:focus {
-                        outline: none;
-                    }
+                textarea {
+                    resize: none;
+                    width: calc(100% - 2rem);
+                    font-size: 1.3em;
+                    padding: 0.5em 1rem;
+                    padding-top: 1.7em;
+                    height: 6.5em;
+                    border-radius: 0.3em;
+                    border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
                 }
 
                 &.focused {
@@ -95,12 +105,28 @@
                         }
 
                         span.input-limit {
-                            display: block;
+                            opacity: 1;
                         }
                     }
 
-                    input {
-                        border: 2px solid var(--dark-blizzard-blue);
+                    input,
+                    textarea {
+                        border: 1px solid var(--dark-blizzard-blue);
+                        outline: 1px solid var(--dark-blizzard-blue);
+                    }
+                }
+
+                &.error {
+                    input,
+                    textarea {
+                        border: 1px solid var(--danger);
+                    }
+
+                    &.focused {
+                        input,
+                        textarea {
+                            outline: 1px solid var(--danger);
+                        }
                     }
                 }
             }

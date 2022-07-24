@@ -29,7 +29,11 @@ const AdminEditProfile = () => {
     return (
         <div className="admin-profile-form">
             <Navbar />
-            <AdminEditProfileForm backToProfile={redirectBackToProfile} authorized={authorized} />
+            <AdminEditProfileForm
+                backToProfile={redirectBackToProfile}
+                adminHandle={adminHandle!}
+                authorized={authorized}
+            />
         </div>
     );
 };

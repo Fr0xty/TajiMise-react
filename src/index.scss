@@ -6,6 +6,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+input,
+textarea {
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
 pre {
     font-family: 'Inconsolata', monospace;
 }
