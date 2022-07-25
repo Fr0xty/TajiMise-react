@@ -24,8 +24,6 @@ const AdminEditProfileForm = ({ authorized, adminHandle, backToProfile }: AdminE
     };
 
     const removeFieldError = (fieldName: string) => {
-        console.log('called');
-
         document.querySelector(`.admin-edit-profile-form .form-body .${fieldName}-field`)?.classList.remove('error');
     };
 
@@ -33,7 +31,14 @@ const AdminEditProfileForm = ({ authorized, adminHandle, backToProfile }: AdminE
      * called on Save button clicked
      */
     const saveProfile = async () => {
-        const data = { name: nameField, bio: bioField, pronouns: pronounsField };
+        const data = {
+            adminHandle,
+            data: {
+                name: nameField,
+                bio: bioField,
+                pronouns: pronounsField,
+            },
+        };
 
         /**
          * raise error in client if any field is empty (no api call)
