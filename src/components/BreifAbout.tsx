@@ -37,9 +37,10 @@ const BreifAbout = () => {
 
             <div className="cards-wrapper">
                 <div className="cards">
-                    {adminInfo.map((admin) => {
+                    {adminInfo.map((admin, i) => {
                         return (
                             <AdminCard
+                                key={i}
                                 avatar={admin.avatar}
                                 description={admin.position_description}
                                 name={admin.name}

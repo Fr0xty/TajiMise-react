@@ -37,8 +37,8 @@ const AdminInfoBody = ({ handle, bio, pronouns, socials }: AdminInfoBodyProperti
                     {handle} <span>/</span> Pronouns
                 </pre>
                 <div className="pronouns-content">
-                    {[...pronouns.split('/')].map((pronoun) => {
-                        return <p>{pronoun}</p>;
+                    {[...pronouns.split('/')].map((pronoun, i) => {
+                        return <p key={i}>{pronoun}</p>;
                     })}
                 </div>
             </div>

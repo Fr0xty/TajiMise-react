@@ -30,8 +30,8 @@ const AdminInfoStrip = ({ avatarURL, name, handle, position }: AdminInfoStripPro
                 <h2 className="admin-name">{name}</h2>
                 <h2 className="admin-handle">{`@${handle}`}</h2>
                 <div className="admin-position">
-                    {position.split('&').map((pos) => {
-                        return <h3>{pos}</h3>;
+                    {position.split('&').map((pos, i) => {
+                        return <h3 key={i}>{pos}</h3>;
                     })}
                 </div>
                 {showEditButton && (
