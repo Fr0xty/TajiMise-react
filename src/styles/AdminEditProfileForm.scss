@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
 
     .form {
         width: 60%;
         margin-top: 1.2em;
+        padding-bottom: 3.5em;
 
         .form-header {
             display: flex;
@@ -30,8 +32,9 @@
                 }
 
                 h2 {
-                    margin-left: 1em;
+                    margin-left: 0.7em;
                     font-size: 1.7em;
+                    padding-bottom: 0.2em;
                 }
             }
 
@@ -129,6 +132,40 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1188px) {
+    .admin-edit-profile-form {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    .admin-edit-profile-form .form {
+        width: 80%;
+
+        .form-body {
+            .bio-field textarea {
+                height: 10em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .admin-edit-profile-form .form {
+        .form-header .left-group h2 {
+            font-size: 1.5em;
+            margin-left: 0.4em;
+        }
+
+        .form-body .field {
+            input,
+            textarea {
+                font-size: 1.2em;
             }
         }
     }
