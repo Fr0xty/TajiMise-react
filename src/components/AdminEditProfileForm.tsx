@@ -33,7 +33,7 @@ const AdminEditProfileForm = ({ authorized, adminHandle, backToProfile }: AdminE
     const saveProfile = async () => {
         const data = {
             adminHandle,
-            data: {
+            info: {
                 name: nameField,
                 bio: bioField,
                 pronouns: pronounsField,
