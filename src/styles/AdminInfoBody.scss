@@ -16,6 +16,7 @@
         border: 1px solid rgba($color: var(--jet-rgb), $alpha: 0.4);
         border-radius: 0.5em;
         display: block;
+        background: rgba($color: white, $alpha: 0.3);
     }
 
     .bio p {
@@ -63,6 +64,7 @@
                 height: 4em;
                 cursor: pointer;
                 color: var(--jet);
+                background: rgba($color: white, $alpha: 0.5);
                 transition: all 0.3s;
                 transition-property: color background;
 

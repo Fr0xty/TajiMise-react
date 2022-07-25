@@ -6,6 +6,7 @@
     height: max-content;
     padding: 1em;
     margin: 0.5em;
+    background: rgba($color: white, $alpha: 0.5);
     transition: all 0.3s;
     transition-property: filter background;
     cursor: pointer;
