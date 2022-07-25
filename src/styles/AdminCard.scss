@@ -30,6 +30,10 @@
         border: 2px dashed var(--arata-color);
     }
 
+    &.makito-card {
+        border: 2px dashed var(--makito-color);
+    }
+
     img.avatar {
         height: 9em;
         border-radius: 50%;

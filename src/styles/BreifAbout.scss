@@ -32,7 +32,8 @@
                     margin: 2em 0;
 
                     &.tameiji-card,
-                    &.fr0xty-card {
+                    &.fr0xty-card,
+                    &.makito-card {
                         margin-right: 5em;
                     }
 
@@ -49,7 +50,8 @@
 @media screen and (max-width: 750px) {
     .breif-about .cards-wrapper .cards .admin-card {
         &.tameiji-card,
-        &.fr0xty-card {
+        &.fr0xty-card,
+        &.makito-card {
             margin-right: 0em;
         }
 
