@@ -2,6 +2,7 @@ import '../styles/Navbar.scss';
 import transparent_tajimise_navbar from '../assets/images/transparent_tajimise_navbar.png';
 import { useEffect, useState } from 'react';
 import AccountBar from './AccountBar';
+import LocaleSelector from './LocaleSelector';
 
 const Navbar = ({
     currentPage,
@@ -53,6 +54,7 @@ const Navbar = ({
                 </div>
 
                 <div className="right-group">
+                    <LocaleSelector />
                     {!loggedIn && (
                         <a href="/login">
                             <button>Login</button>
