@@ -3,14 +3,18 @@ import sample1 from '../assets/images/sample1.png';
 import sample2 from '../assets/images/sample2.png';
 import Navbar from './Navbar';
 
+import { useTranslation } from 'react-i18next';
+
 const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) => {
+    const { t } = useTranslation();
+
     return (
         <div className="hero no-select">
             <Navbar currentPage={currentPage} noBackground={true} />
 
             <div className="content">
                 <h1>
-                    <span>TajiMisé</span> Store.
+                    <span>TajiMisé</span> {t('hero_header')}
                 </h1>
                 <p>
                     Quality, Custom-Tailored Art is our raison d'être. <i>Anime</i>, <i>Manga</i> or <i>Game</i>{' '}

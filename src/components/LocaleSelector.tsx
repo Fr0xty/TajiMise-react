@@ -2,9 +2,11 @@ import '../styles/LocaleSelector.scss';
 
 import languageIcon from '../assets/images/language_icon.png';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const LocaleSelector = () => {
     const [localeSelectPromptOpen, setLoaleSelectPromptOpen] = useState(false);
+    const { i18n } = useTranslation();
 
     /**
      * called when user select a language from the menu
@@ -21,6 +23,11 @@ const LocaleSelector = () => {
         await fetch(`/api/locale/set?language-code=${languageCode}`, {
             method: 'post',
         });
+
+        /**
+         * update language without the need of reloading window
+         */
+        i18n.changeLanguage(languageCode.replace('-', '_'));
 
         /**
          * close language select window
