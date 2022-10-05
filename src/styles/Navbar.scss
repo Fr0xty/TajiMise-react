@@ -153,6 +153,12 @@
                     }
                 }
             }
+
+            .locale-selector {
+                img {
+                    height: 2.2em;
+                }
+            }
         }
 
         .burger-menu {
@@ -232,6 +238,25 @@
 
         .right-group {
             display: none;
+            position: absolute;
+            z-index: 999;
+            justify-content: center;
+            left: 0;
+            right: 0;
+            top: 37em;
+            gap: 8em;
+
+            .locale-selector {
+                padding: 0;
+
+                img {
+                    height: 2.6em;
+                }
+            }
+
+            .login-btn {
+                font-size: 1.5em;
+            }
         }
 
         .burger-menu {
@@ -290,13 +315,32 @@
                     }
                 }
             }
+
+            .right-group {
+                display: flex;
+            }
         }
     }
 }
 
 @media screen and (max-width: 800px) {
-    .navbar-wrapper .navbar .left-group nav a {
-        font-size: 1.5em;
+    .navbar-wrapper .navbar {
+        .left-group nav a {
+            font-size: 1.5em;
+        }
+
+        .right-group {
+            top: 34.5em;
+            gap: 6em;
+
+            .locale-selector img {
+                height: 2.4em;
+            }
+
+            .login-btn {
+                font-size: 1.3em;
+            }
+        }
     }
 }
 
@@ -306,6 +350,19 @@
 
         .left-group nav a {
             font-size: 1.3em;
+        }
+
+        .right-group {
+            top: 30.5em;
+            gap: 3em;
+
+            .locale-selector img {
+                height: 2.3em;
+            }
+
+            .login-btn {
+                font-size: 1.2em;
+            }
         }
     }
 }

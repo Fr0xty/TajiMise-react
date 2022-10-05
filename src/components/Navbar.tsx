@@ -31,7 +31,7 @@ const Navbar = ({
             </div>
             {!noBackground && <div className="background" />}
 
-            <div className="navbar ">
+            <div className="navbar">
                 <div className="left-group">
                     <a href="/">
                         <img src={transparent_tajimise_navbar} alt="tajimise logo" />
@@ -57,7 +57,7 @@ const Navbar = ({
                     <LocaleSelector />
                     {!loggedIn && (
                         <a href="/login">
-                            <button>Login</button>
+                            <button className="login-btn">Login</button>
                         </a>
                     )}
                     {loggedIn && !noAccountNavs && <AccountBar />}
