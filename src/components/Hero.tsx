@@ -17,8 +17,13 @@ const Hero = ({ currentPage }: { currentPage?: 'home' | 'about' | 'products' }) 
                     <span>TajiMisé</span> {t('hero_header')}
                 </h1>
                 <p>
-                    Quality, Custom-Tailored Art is our raison d'être. <i>Anime</i>, <i>Manga</i> or <i>Game</i>{' '}
-                    characters you ruminate, why not bring them to reality?
+                    {t('hero_description_1')}
+                    <i>{t('hero_description_2')}</i>
+                    {t('hero_description_3')}
+                    <i>{t('hero_description_4')}</i>
+                    {t('hero_description_5')}
+                    <i>{t('hero_description_6')}</i>
+                    {t('hero_description_7')}
                 </p>
 
                 <div className="samples">

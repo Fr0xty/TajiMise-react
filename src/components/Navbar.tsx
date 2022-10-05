@@ -3,6 +3,7 @@ import transparent_tajimise_navbar from '../assets/images/transparent_tajimise_n
 import { useEffect, useState } from 'react';
 import AccountBar from './AccountBar';
 import LocaleSelector from './LocaleSelector';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = ({
     currentPage,
@@ -14,6 +15,7 @@ const Navbar = ({
     noAccountNavs?: boolean;
 }) => {
     const [loggedIn, setLoggedIn] = useState(false);
+    const { t } = useTranslation();
 
     useEffect(() => {
         if (document.cookie.includes('logged_in=')) setLoggedIn(true);
@@ -39,16 +41,16 @@ const Navbar = ({
 
                     <nav>
                         <a href="/" className="home-nav">
-                            Home
+                            {t('navbar_home')}
                         </a>
                         <a href="/products" className="products-nav">
-                            Products
+                            {t('navbar_products')}
                         </a>
                         <a href="/about" className="about-nav">
-                            About
+                            {t('navbar_about')}
                         </a>
                         <a target="_blank" rel="noreferrer" href="/api/redirect/discord-server">
-                            Discord Server
+                            {t('navbar_discord_server')}
                         </a>
                     </nav>
                 </div>

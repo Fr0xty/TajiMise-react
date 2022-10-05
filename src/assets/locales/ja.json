@@ -1,3 +1,19 @@
 {
-  "hero_header": "店。"
+  "hero_header": "お店です。",
+  "hero_description_1": "品質及びカスタムの商品は私たちの誇りです。",
+  "hero_description_2": "アニメ",
+  "hero_description_3": "、",
+  "hero_description_4": "漫画",
+  "hero_description_5": "、それとも",
+  "hero_description_6": "ゲーム",
+  "hero_description_7": "のキャラクターを思い巡らすのなら、現実になったら？",
+
+  "navbar_home": "ホーム",
+  "navbar_products": "商品",
+  "navbar_about": "会社概要",
+  "navbar_discord_server": "Discord サーバ",
+
+  "login": "ログイン",
+
+  "breif_about_header": "TajiMiséの委員会"
 }

@@ -1,3 +1,19 @@
 {
-  "hero_header": "Store."
+  "hero_header": "Store.",
+  "hero_description_1": "Quality, Custom-Tailored Art is our raison d'être. ",
+  "hero_description_2": "Anime",
+  "hero_description_3": ", ",
+  "hero_description_4": "Manga",
+  "hero_description_5": " or ",
+  "hero_description_6": "Game",
+  "hero_description_7": " characters you ruminate, why not bring them to reality?",
+
+  "navbar_home": "Home",
+  "navbar_products": "Products",
+  "navbar_about": "About",
+  "navbar_discord_server": "Discord Server",
+
+  "login": "Login",
+
+  "breif_about_header": "Who run TajiMisé?"
 }

@@ -1,15 +1,14 @@
 import '../styles/BreifAbout.scss';
 
-import tameijiAvatar from '../assets/images/tameiji_avatar.webp';
-import fr0xtyAvatar from '../assets/images/fr0xty_avatar.webp';
-import capirinAvatar from '../assets/images/capirin_avatar.webp';
-import arataAvatar from '../assets/images/arata_avatar.webp';
 import AdminCard from './AdminCard';
 
 import { useEffect, useState } from 'react';
 import { AdminInfo } from 'tajimise';
+import { useTranslation } from 'react-i18next';
 
 const BreifAbout = () => {
+    const { t } = useTranslation();
+
     const [adminInfo, setAdminInfo] = useState<AdminInfo[]>([
         {
             avatar: 'loading..',
@@ -33,7 +32,7 @@ const BreifAbout = () => {
     }, []);
     return (
         <div className="breif-about">
-            <h1 className="home-main-header">Who run TajiMisé?</h1>
+            <h1 className="home-main-header">{t('breif_about_header')}</h1>
 
             <div className="cards-wrapper">
                 <div className="cards">
