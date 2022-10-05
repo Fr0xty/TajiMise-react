@@ -61,11 +61,14 @@
                 font-weight: bold;
                 color: rgba($color: white, $alpha: 0.7);
                 background: linear-gradient(to left, transparent 50%, var(--dark-blizzard-blue) 50%) right;
-                background-size: 200% 120%;
+                background-size: 200% 0%;
                 transition: 0.3s;
+                position: relative;
+                z-index: 998;
 
                 &:hover {
                     background-position: left;
+                    background-size: 200% 100%;
                     color: white;
                 }
             }
@@ -73,7 +76,7 @@
             .top-left-border,
             .bottom-right-border {
                 position: absolute;
-                // z-index: 997;
+                z-index: 997;
                 height: 90%;
                 width: 30%;
             }
