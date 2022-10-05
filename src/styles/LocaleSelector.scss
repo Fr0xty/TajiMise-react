@@ -86,3 +86,23 @@
         }
     }
 }
+
+@media screen and (max-width: 930px) {
+    .locale-selector .locale-select-prompt .wrapper {
+        padding: 3em 4.5em;
+
+        .header {
+            font-size: 1.5em;
+        }
+
+        .selection {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .locale-selector .locale-select-prompt .wrapper {
+        padding: 2.5em 4em;
+    }
+}
