@@ -237,7 +237,9 @@
         }
 
         .right-group {
-            display: none;
+            pointer-events: none;
+            z-index: -999;
+            opacity: 0;
             position: absolute;
             z-index: 999;
             justify-content: center;
@@ -317,7 +319,12 @@
             }
 
             .right-group {
-                display: flex;
+                pointer-events: all;
+                z-index: 999;
+                opacity: 100%;
+                transition: all 1s;
+                transition-delay: 1s;
+                transition-property: opacity;
             }
         }
     }
